@@ -1,4 +1,12 @@
 - name: damidoopxyz
   truename: DamiDoop XYZ
-  icon: https://cdn.ncxprogramming.com/file/icon/rngtool.png
   desc: This very website!
+- name: ncx-site
+  truename: NCX Programming Website
+  desc: A website where my friends and I make programs (albeit rarely)
+- name: rngtool-android
+  truename: RNGTool Android
+  desc: The Android port of RNGTool for iOS that I made! One of the better ways to randomly generate numbers on Android!
+- name: geo-culminating
+  truename: Geography Culminating Website
+  desc: A modification to the NCX site for my geography culminating task.

@@ -2,9 +2,25 @@
 title: Blog
 layout: main
 ---
+{% assign years = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+
 <div class="container">
+    {% for year in years %}
+    {% if year.name == "2024" %}
+    <section style="margin-bottom: 1em;">
+        <div class="window">
+            <div class="title-bar">
+                <div class="title-bar-text">Notice!</div>
+            </div>
+            <div class="window-body">
+                <p>All the posts below here were brought over from the NCX Blog, so just keep that in mind!</p>
+            </div>
+        </div>
+    </section>
+    {% else %}
+    {% endif %}
     <section class="row" style="margin-bottom:7rem">
-        {% for post in site.posts %}
+        {% for post in year.items %}
         <div class="col">
             <div class="window" style="margin-bottom: 1em;">
                 <div class="title-bar">
@@ -36,6 +52,7 @@ layout: main
         </div>
         {% endfor %}
     </section>
+    {% endfor %}
 </div>
 
 

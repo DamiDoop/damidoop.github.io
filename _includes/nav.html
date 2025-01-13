@@ -1,33 +1,46 @@
-<head>
-    <link rel="stylesheet" href="/assets/css/nav.css">
-</head>
-<nav class="navbar navbar-dark navbar-expand-lg bg-remove">
-    <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText" style="justify-content: space-between;">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <a class="navbar-brand" href="/"></a>
-            </ul>
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="/">Home</a>
+<nav>
+    <div class="window" style="margin-right: 1em; margin-bottom: 1em;">
+        <div class="title-bar">
+            <div class="title-bar-text">Navigation</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <ul class="tree-view">
+                <li><a href="/">Home</a></li>
+                <li><a href="/aboutme">About Me</a></li>
+<!--                <li><a href="/pictures">Pictures</a></li>-->
+                <li>
+                    <details>
+                        <summary><a href="/blog">Blog</a></summary>
+                        <ul>
+                            {% for post in site.posts %}
+                            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </details>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/blog">Blog</a>
+                <li>
+                    <details open>
+                        <summary>Projects</summary>
+                        <ul>
+                            {% for project in site.data.projects-maintained %}
+                            <li><a href="/software/{{ project.name }}">{{ project.truename }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </details>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/test">Test Page</a>
-                </li>
-            </ul>
-            <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Theme </a>
-                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" onclick="chooseTheme(&quot;light&quot;)" href="javascript:void(0);">Light</a></li>
-                        <li><a class="dropdown-item" onclick="chooseTheme(&quot;dark&quot;)" href="javascript:void(0);">Dark</a></li>
-                    </ul>
+                <li>
+                    <details>
+                        <summary>Archives</summary>
+                        <ul>
+                            {% for archive in site.data.archives %}
+                            <li><a href="{{ archive.link }}">{{ archive.truename }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </details>
                 </li>
             </ul>
         </div>

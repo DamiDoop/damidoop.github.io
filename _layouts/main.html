@@ -16,43 +16,7 @@
     <p style="font-family: InterVariable, Inter, sans-serif">DAMIDOOP XYZ</p>
 </div>
 <div id="main" class="clearfix">
-    <nav>
-        <div class="window" style="margin-right: 1em; margin-bottom: 1em;">
-            <div class="title-bar">
-                <div class="title-bar-text">Navigation</div>
-                <div class="title-bar-controls">
-                    <button aria-label="Minimize"></button>
-                    <button aria-label="Close"></button>
-                </div>
-            </div>
-            <div class="window-body">
-                <ul class="tree-view">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/aboutme">About Me</a></li>
-                    <li>
-                        <details>
-                            <summary><a href="/blog">Blog</a></summary>
-                            <ul>
-                                {% for post in site.posts %}
-                                <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-                                {% endfor %}
-                            </ul>
-                        </details>
-                    </li>
-                    <li>
-                        <details open>
-                            <summary>Projects</summary>
-                            <ul>
-                                {% for project in site.data.projects-maintained %}
-                                <li><a href="/software/{{ project.name }}">{{ project.truename }}</a></li>
-                                {% endfor %}
-                            </ul>
-                        </details>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    {% include nav.html %}
     {{ content }}
 </div>
 </body>
