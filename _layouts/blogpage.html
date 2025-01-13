@@ -17,7 +17,9 @@ layout: main
         <p class="status-bar-field">Posted: {{ page.date | date: "%B %d, %Y"}}</p>
       </div>
       <div class="window-body">
-        {{ page.content }}
+        <fieldset>
+          {{ page.content }}
+        </fieldset>
       </div>
     </div>
 </section>
