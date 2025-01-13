@@ -27,8 +27,37 @@
                         <summary>Projects</summary>
                         <ul>
                             {% for project in site.data.projects-maintained %}
+                            {% if project.school == null and project.archive == null%}
                             <li><a href="/software/{{ project.name }}">{{ project.truename }}</a></li>
+                            {% else %}
+                            {% endif %}
                             {% endfor %}
+                            <li>
+                                <details>
+                                    <summary>School Projects</summary>
+                                    <ul>
+                                        {% for project in site.data.projects-maintained %}
+                                        {% if project.school == true and project.archive == null%}
+                                        <li><a href="/software/{{ project.name }}">{{ project.truename }}</a></li>
+                                        {% else %}
+                                        {% endif %}
+                                        {% endfor %}
+                                    </ul>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary>Archived Projects</summary>
+                                    <ul>
+                                        {% for project in site.data.projects-maintained %}
+                                        {% if project.archive == true %}
+                                        <li><a href="/software/{{ project.name }}">{{ project.truename }}</a></li>
+                                        {% else %}
+                                        {% endif %}
+                                        {% endfor %}
+                                    </ul>
+                                </details>
+                            </li>
                         </ul>
                     </details>
                 </li>
@@ -37,7 +66,7 @@
                         <summary>Archives</summary>
                         <ul>
                             {% for archive in site.data.archives %}
-                            <li><a href="{{ archive.link }}">{{ archive.truename }}</a></li>
+                            <li><a href="{{ archive.link }}">{{ archive.truename }} <i class="bi bi-box-arrow-up-right"></i></a></li>
                             {% endfor %}
                         </ul>
                     </details>

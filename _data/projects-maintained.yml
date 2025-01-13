@@ -10,3 +10,4 @@
 - name: geo-culminating
   truename: Geography Culminating Website
   desc: A modification to the NCX site for my geography culminating task.
+  school: true

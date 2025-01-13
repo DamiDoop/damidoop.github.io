@@ -2,13 +2,17 @@
     body {
         background-image: url("/assets/img/leaves.webp")
     }
+    @media (min-width: 30em) {
+        .urow { width: 100%; display: table; table-layout: fixed; }
+        .ucol { display: table-cell; }
+    }
+
 </style>
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="https://unpkg.com/xp.css" />
     <link rel="stylesheet" href="/assets/css/index.css"/>
 <!--    <link rel="stylesheet" href="https://unpkg.com/xp.css@0.2.3/dist/98.css" />-->
-    <link rel="stylesheet" href="node_modules/ungrid/ungrid.css">
     <title>{{ page.title }} | {{ site.title }}</title>
 </head>
 <body class="container">
