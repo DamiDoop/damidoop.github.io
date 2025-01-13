@@ -1,0 +1,23 @@
+---
+title: Blog
+layout: main
+---
+<section>
+    <div class="window">
+      <div class="title-bar">
+        <div class="title-bar-text">{{ page.title }}</div>
+        <div class="title-bar-controls">
+          <button aria-label="Minimize"></button>
+          <button aria-label="Maximize"></button>
+          <button aria-label="Close"></button>
+        </div>
+      </div>
+      <div class="status-bar">
+        <p class="status-bar-field">Author: {{ page.author }}</p>
+        <p class="status-bar-field">Posted: {{ page.date | date: "%B %d, %Y"}}</p>
+      </div>
+      <div class="window-body">
+        {{ page.content }}
+      </div>
+    </div>
+</section>

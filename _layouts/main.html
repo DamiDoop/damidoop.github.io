@@ -1,0 +1,58 @@
+<style>
+    body {
+        background-image: url("/assets/img/leaves.webp")
+    }
+</style>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://unpkg.com/xp.css" />
+    <link rel="stylesheet" href="/assets/css/index.css"/>
+<!--    <link rel="stylesheet" href="https://unpkg.com/xp.css@0.2.3/dist/98.css" />-->
+    <link rel="stylesheet" href="node_modules/ungrid/ungrid.css">
+    <title>{{ page.title }} | {{ site.title }}</title>
+</head>
+<body class="container">
+<div class="title">
+    <p style="font-family: InterVariable, Inter, sans-serif">DAMIDOOP XYZ</p>
+</div>
+<div id="main" class="clearfix">
+    <nav>
+        <div class="window" style="margin-right: 1em; margin-bottom: 1em;">
+            <div class="title-bar">
+                <div class="title-bar-text">Navigation</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="window-body">
+                <ul class="tree-view">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/aboutme">About Me</a></li>
+                    <li>
+                        <details>
+                            <summary><a href="/blog">Blog</a></summary>
+                            <ul>
+                                {% for post in site.posts %}
+                                <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details open>
+                            <summary>Projects</summary>
+                            <ul>
+                                {% for project in site.data.projects-maintained %}
+                                <li><a href="/software/{{ project.name }}">{{ project.truename }}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </details>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    {{ content }}
+</div>
+</body>

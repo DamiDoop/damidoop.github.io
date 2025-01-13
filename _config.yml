@@ -1,0 +1,9 @@
+name: DamiDoop XYZ
+title: DamiDoop XYZ
+url: https://damidoop.xyz
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+feed:
+  posts_limit: 20

@@ -1,0 +1,53 @@
+* {
+    font-family: departure-mono;
+}
+a.outofwindow {
+    color: white;
+}
+#main {
+    width: 1200px;
+    margin: 0 auto;
+}
+.title {
+    font-weight: 650;
+    font-size: 72px;
+    text-align: center;
+    width: 800px;
+    margin: 0 auto;
+}
+.container {
+    position: relative;
+}
+.clearfix {
+    overflow: auto;
+}
+@media (min-width:600px) {
+    nav {
+        float: left;
+        width: 25%;
+    }
+    section {
+        margin-left: 25%;
+    }
+}
+@media (max-width:599px) {
+    nav li {
+        display: inline;
+    }
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 70px;
+    background-color: white;
+    width: 100%;
+}
+body {
+    margin-bottom: 120px;
+}
+
+@font-face {
+    font-family: departure-mono;
+    src: url("/assets/fonts/DepartureMono-Regular.woff2"), url("/assets/fonts/DepartureMono-Regular.otf") format("opentype");
+}

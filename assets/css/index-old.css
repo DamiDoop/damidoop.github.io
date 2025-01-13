@@ -1,0 +1,221 @@
+* {
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+}
+
+body {
+    background-color: rgb(60, 60, 60);
+}
+
+h1 {
+    color: rgb(250, 250, 250);
+    font-family: sans-serif;
+}
+
+h2 {
+    color: rgb(250, 250, 250);
+    font-family: sans-serif;
+}
+
+.title {
+    margin: auto;
+    width: 90%;
+    text-align: center;
+    padding: 15px 0 25px 0;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.subtitle {
+    margin: auto;
+    width: 90%;
+    text-align: center;
+    margin-top: -4%;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+}
+
+.column.side {
+    width: 25%;
+}
+
+.column.middle {
+    width: 50%;
+}
+
+.column-two {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 800px) {
+    .column, .column.side, .column.middle, .column-two {
+        width: 100%;
+    }
+}
+
+div.bi {
+    column-count: 2;
+    column-gap: 4%;
+    margin: auto;
+    width: 90%;
+    height: 90%;
+}
+div.tri {
+    column-count: 3;
+    column-gap: 4%;
+    margin: auto;
+    width: 97%;
+}
+div.pfp {
+    border: 5px solid rgb(250, 250, 250);
+    background-color: rgb(60, 60, 60);
+    border-radius: 35px;
+    margin: auto;
+    width: 40%;
+    padding: 15px 30px 15px 30px;
+    box-shadow: 5px 5px 15px rgb(40, 40, 40);
+}
+div.pill {
+    border: 5px solid rgb(250, 250, 250);
+    background-color: rgb(60, 60, 60);
+    border-radius: 35px;
+    margin: auto;
+    width: 60%;
+    padding: 15px 30px 15px 30px;
+    box-shadow: 5px 5px 15px rgb(40, 40, 40);
+}
+div.full {
+    margin: 5%;
+}
+div.footer {
+    border: 2px solid rgb(250, 250, 250);
+    border-style: solid none none none;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(40, 40, 40);
+    color: white;
+    text-align: center;
+}
+p {
+    color: rgb(210, 210, 210);
+    /* margin-left: 40px;
+    margin-right: 40px; */
+    font-family: sans-serif;
+    word-break: keep-all;
+}
+a {
+    color: rgb(210, 210, 210);
+    /* margin-left: 40px;
+    margin-right: 40px; */
+    font-family: sans-serif;
+    word-break: keep-all;
+}
+.center {
+    margin: auto;
+    width: 90%;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.notice {
+    border-left: 4px solid gold;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 5px 5px 5px 5px;
+    background-image: linear-gradient(to right, rgb(255, 160, 0, 0.3), rgb(255, 215, 0, 0.3));
+    border-radius: 5px;
+}
+
+.info {
+    border-left: 4px solid rgb(0, 160, 255, 1);
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 5px 5px 5px 5px;
+    background-image: linear-gradient(to right, rgb(0, 160, 255, 0.3), rgb(0, 215, 255, 0.3));
+    border-radius: 5px;
+}
+
+.pfp {
+    float: left;
+    border: 3px solid rgb(210, 210, 210);
+    border-radius: 15px;
+    margin: 20px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    width: 45%;
+}
+
+.icon {
+    border: 3px solid rgb(210, 210, 210);
+    border-radius: 5px;
+    margin: -3px;
+    margin-right: 3px;
+    margin-left: 0px;
+    width: 32px;
+    height: 32px;
+    transition: transform .2s;
+}
+
+.icon-cont {
+    height: 42px;
+    width: 42px;
+}
+
+.icon-big {
+    border: 5px solid rgb(210, 210, 210);
+    border-radius: 15px;
+    margin: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
+}
+
+.enlarge:hover {
+    transform: scale(1.5);
+    margin-right: 6px;
+    margin-left: 6px;
+}
+
+.background {
+    background: linear-gradient(90deg, #f09ea7, #f6ca94, #fafabe, #c1ebc0, #c7caff, #cdabeb, #f6c2f3);
+    background-size: 100% 100%;
+    -webkit-background-clip: text;
+    background-clip: border-box;
+    border-color: transparent;
+
+    -webkit-animation: RB-Anim 50s ease infinite;
+    -moz-animation: RB-Anim 50s ease infinite;
+    animation: RB-Anim 50s ease infinite;
+}
+
+@-webkit-keyframes RB-Anim {
+    0%{background-position:0% 17%}
+    50%{background-position:100% 84%}
+    100%{background-position:0% 17%}
+}
+@-moz-keyframes RB-Anim {
+    0%{background-position:0% 17%}
+    50%{background-position:100% 84%}
+    100%{background-position:0% 17%}
+}
+@keyframes RB-Anim {
+    0%{background-position:0% 17%}
+    50%{background-position:100% 84%}
+    100%{background-position:0% 17%}
+}

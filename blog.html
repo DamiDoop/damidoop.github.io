@@ -1,0 +1,53 @@
+---
+title: Blog
+layout: main
+---
+<div class="container">
+    <section class="row" style="margin-bottom:7rem">
+        {% for post in site.posts %}
+        <div class="col">
+            <div class="window" style="margin-bottom: 1em;">
+                <div class="title-bar">
+                    <div class="title-bar-text">{{ post.title }}</div>
+                    <div class="title-bar-controls">
+                        <button aria-label="Close"></button>
+                    </div>
+                </div>
+                <div class="window-body">
+                    <fieldset style="padding: 1em">
+                        <legend>Description</legend>
+                        {% if post.icon == null %}
+                        {% else %}
+                        <img src="{{ post.icon }}" style="float: right; max-height:100px; margin-left: 3%">
+                        {% endif %}
+                        {% if post.desc == null %}
+                        <p>{{ post.excerpt }}</p>
+                        {% else %}
+                        <p>{{ post.desc }}</p>
+                        {% endif %}
+                    </fieldset>
+                    <button><a href="{{ post.url }}">Read More</a></button>
+                </div>
+                <div class="status-bar">
+                    <p class="status-bar-field">Author: {{ post.author}}</p>
+                    <p class="status-bar-field">Posted: {{ post.date | date: "%B %d, %Y"}}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </section>
+</div>
+
+
+<!--<div class="text-center pt-3">-->
+<!--    <h1>Blog</h1>-->
+<!--    <p>Articles are listed with the newest on top.</p>-->
+<!--</div>-->
+<!--<div class="container">-->
+<!--    <hr>-->
+<!--    {% for post in site.posts %}-->
+<!--        <p><a href="{{ post.url }}">{{ post.title }}</a></p>-->
+<!--        <p>{{ post.date | date: "%Y-%m-%d" }} ({{ post.author }})</p>-->
+<!--        <hr>-->
+<!--    {% endfor %}-->
+<!--</div>-->
