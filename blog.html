@@ -2,58 +2,63 @@
 title: Blog
 layout: main
 ---
+
+
 {% assign years = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
 
-<div class="container">
-    {% for year in years %}
-    {% if year.name == "2024" %}
-    <section style="margin-bottom: 1em;">
-        <div class="window">
-            <div class="title-bar">
-                <div class="title-bar-text">Notice!</div>
-            </div>
-            <div class="window-body">
-                <p>All the posts below here were brought over from the NCX Blog, so just keep that in mind!</p>
-            </div>
-        </div>
-    </section>
-    {% else %}
-    {% endif %}
-    <section class="row" style="margin-bottom:2rem">
-        {% for post in year.items %}
-        <div class="col">
-            <div class="window" style="margin-bottom: 1em;">
+
+<section class="container">
+        {% for year in years %}
+        {% if year.name == "2024" %}
+        <div style="margin-bottom: 1em;">
+            <div class="window">
                 <div class="title-bar">
-                    <div class="title-bar-text">{{ post.title }}</div>
-                    <div class="title-bar-controls">
-                        <button aria-label="Close"></button>
-                    </div>
+                    <div class="title-bar-text">Notice!</div>
                 </div>
                 <div class="window-body">
-                    <fieldset style="padding: 1em">
-                        <legend>Description</legend>
-                        {% if post.icon == null %}
-                        {% else %}
-                        <img src="{{ post.icon }}" style="float: right; max-height:100px; margin-left: 3%">
-                        {% endif %}
-                        {% if post.desc == null %}
-                        <p>{{ post.excerpt }}</p>
-                        {% else %}
-                        <p>{{ post.desc }}</p>
-                        {% endif %}
-                    </fieldset>
-                    <button><a href="{{ post.url }}">Read More</a></button>
-                </div>
-                <div class="status-bar">
-                    <p class="status-bar-field">Author: {{ post.author}}</p>
-                    <p class="status-bar-field">Posted: {{ post.date | date: "%B %d, %Y"}}</p>
+                    <p>All the posts below here were brought over from the NCX Blog, so just keep that in mind!</p>
                 </div>
             </div>
+        </div>
+        {% else %}
+        {% endif %}
+        <div class="row" style="margin-bottom:2rem">
+            {% for post in year.items %}
+            <div class="col">
+                <div class="window" style="margin-bottom: 1em;">
+                    <div class="title-bar">
+                        <div class="title-bar-text">{{ post.title }}</div>
+                        <div class="title-bar-controls">
+                            <button aria-label="Close"></button>
+                        </div>
+                    </div>
+                    <div class="window-body">
+                        <fieldset style="padding: 1em">
+                            <legend>Description</legend>
+                            {% if post.icon == null %}
+                            {% else %}
+                            <img src="{{ post.icon }}" style="float: right; max-height:100px; margin-left: 3%">
+                            {% endif %}
+                            {% if post.desc == null %}
+                            <p>{{ post.excerpt }}</p>
+                            {% else %}
+                            <p>{{ post.desc }}</p>
+                            {% endif %}
+                        </fieldset>
+                        <button><a href="{{ post.url }}">Read More</a></button>
+                    </div>
+                    <div class="status-bar">
+                        <p class="status-bar-field">Author: {{ post.author}}</p>
+                        <p class="status-bar-field">Posted: {{ post.date | date: "%B %d, %Y"}}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
         </div>
         {% endfor %}
     </section>
-    {% endfor %}
-</div>
+
+
 
 
 <!--<div class="text-center pt-3">-->
