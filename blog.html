@@ -37,7 +37,7 @@ layout: main
                             <legend>Description</legend>
                             {% if post.icon == null %}
                             {% else %}
-                            <img src="{{ post.icon }}" style="float: right; max-height:100px; margin-left: 3%">
+                            <img src="{{ post.icon }}" class="align-self-center" style="float: right; max-height:100px; margin-left: 3%">
                             {% endif %}
                             {% if post.desc == null %}
                             <p>{{ post.excerpt }}</p>
