@@ -14,7 +14,8 @@
 <!--                <li><a href="/pictures">Pictures</a></li>-->
                 <li>
                     <details>
-                        <summary><a href="/blog">Blog</a></summary>
+<!--                        <summary><a href="/blog">Blog</a></summary>-->
+                        <summary>Blog</summary>
                         <ul>
                             {% for post in site.posts %}
                             <li><a href="{{ post.url }}">{{ post.title }}</a></li>
@@ -71,8 +72,18 @@
                         </ul>
                     </details>
                 </li>
+                <li>
+                    <details>
+                        <summary>Services</summary>
+                        <ul>
+                            {% for service in site.data.services %}
+                            <li><a href="{{ service.link }}">{{ service.name }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </details>
+                </li>
                 <li><a href="/contactme">Contact Me</a></li>
-                <li><a href="https://github.com/DamiDoop/damidoop.github.io">Site GitHub</a></li>
+                <li><a href="https://github.com/DamiDoop/damidoop.github.io">Website Repository</a></li>
             </ul>
         </div>
     </div>
