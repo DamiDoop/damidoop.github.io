@@ -2,39 +2,57 @@
 title: About Me
 layout: main
 ---
-
 <style>
     @media (min-width: 30em) {
         .urow { width: 100%; display: table; table-layout: fixed; }
         .ucol { display: table-cell; }
     }
 </style>
+
 <section>
-    <div class="window">
+    <div class="window"style="background-image: url('assets/img/watercolor.webp')">
         <div class="title-bar">
             <div class="title-bar-text">DamiDoop</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Close"></button>
+            </div>
         </div>
         <div class="window-body">
-            <div class="window" style="max-width: 15%">
-                <div class="title-bar">
-                    <div class="title-bar-text">Me!</div>
+            <div class="urow">
+                <div class="ucol" style="width: 14%;">
+                    <div class="window">
+                        <div class="title-bar">
+                            <div class="title-bar-text">Me!</div>
+                            <div class="title-bar-controls">
+                                <button aria-label="Close"></button>
+                            </div>
+                        </div>
+                        <div class="window-body">
+                            <img src="assets/img/Me.jpg" style="max-width: 100%"/>
+                        </div>
+                    </div>
                 </div>
-                <div class="window-body">
-                    <p>The individual illuminates silence which is not evil.</p>
-<!--                TODO:    PUT PICTURE OF ME HERE-->
+                <div class="ucol">
+
+                </div>
+                <div class="ucol" style="width: 85%">
+                    <fieldset>
+                        <legend>About Me</legend>
+                        <p>Hi! I'm Maple, and this is my website! I'm 17 years of age, and I'm quite a fan of computers.
+                            I like messing around with them, managing them, or hosting things on them! I also like to
+                            code every now and then, and I enjoy playing games like Minecraft, RimWorld, Miitopia and
+                            more!
+                        </p>
+                        <p>I also want to get into collecting physical media like music and video games, though I have
+                        far from the budget to do that, so I don't have that much.</p>
+                        <p>As for computers, I enjoy self-hosting things running my servers, running things like
+                        Nextcloud or Jellyfin. I also like older technology and using Windows XP for older games
+                        or software. I have slowly amassed a relatively small collection of computers which I might go
+                        over in a blog post or something.</p>
+                    </fieldset>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
-<!--<section>-->
-<!--    <div class="window">-->
-<!--        <div class="title-bar">-->
-<!--            <div class="title-bar-text">DamiDoop</div>-->
-<!--        </div>-->
-<!--        <div class="window-body">-->
-<!--            <p>The individual illuminates silence which is not evil.</p>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->

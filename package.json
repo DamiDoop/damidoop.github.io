@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@material/web": "^2.2.0",
+    "ungrid": "^1.0.1"
+  }
+}
