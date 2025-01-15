@@ -27,7 +27,7 @@
                         <ul>
                             {% for project in site.data.projects-maintained %}
                             {% if project.school == null and project.archive == null%}
-                            <li><a href="/software/{{ project.name }}">{{ project.truename }}</a></li>
+                            <li><a href="/projects/{{ project.name }}">{{ project.truename }}</a></li>
                             {% else %}
                             {% endif %}
                             {% endfor %}
@@ -37,7 +37,7 @@
                                     <ul>
                                         {% for project in site.data.projects-maintained %}
                                         {% if project.school == true and project.archive == null%}
-                                        <li><a href="/software/{{ project.name }}">{{ project.truename }}</a></li>
+                                        <li><a href="/projects/{{ project.name }}">{{ project.truename }}</a></li>
                                         {% else %}
                                         {% endif %}
                                         {% endfor %}
@@ -50,7 +50,7 @@
                                     <ul>
                                         {% for project in site.data.projects-maintained %}
                                         {% if project.archive == true %}
-                                        <li><a href="/software/{{ project.name }}">{{ project.truename }}</a></li>
+                                        <li><a href="/projects/{{ project.name }}">{{ project.truename }}</a></li>
                                         {% else %}
                                         {% endif %}
                                         {% endfor %}

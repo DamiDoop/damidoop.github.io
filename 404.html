@@ -5,17 +5,18 @@ permalink: /404.html
 ---
 
 <section>
-    <div class="window">
+    <div class="window" style="width: 50%; margin: auto;">
         <div class="title-bar">
-            <div class="title-bar-text">Uh Oh! An error has occurred!</div>
+            <div class="title-bar-text">HTTP 404</div>
         </div>
         <div class="window-body">
+            <img src="/assets/img/xp_error.png" style="float: left; height: 32px; margin: 1% 1em 1% 1%;display: flex; justify-content: center; align-items: center;"/>
             <div class="text-center">
-                <p>Uh oh, you've stumbled across a page that doesn't exist!</p>
+                <p>An error has occurred and the page you are trying to find does not exist. Please try again later.</p>
             </div>
-        </div>
-        <div class="status-bar">
-            <p class="status-bar-field">Error: 404</p>
+            <section class="field-row" style="justify-content: flex-end">
+                <button onclick="window.history.back()">Back</button>
+            </section>
         </div>
     </div>
 </section>
