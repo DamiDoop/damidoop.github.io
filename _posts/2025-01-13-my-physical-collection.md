@@ -148,7 +148,7 @@ Out of all of these games, I only have one CD album to my name that I picked up 
 Gloom Division by I DONT KNOW HOW BUT THEY FOUND ME.
 
 I also own a few PC games and software, but they aren't properly put away and easily readable, though I know that
-list includes a three-disc set for Microsoft Office 2003m, which can be found on the
+list includes a three-disc set for Microsoft Office 2003, which can be found on the
 <a href="https://archive.org">Internet Archive</a>.
 
 I hope you enjoyed reading my list of physical media, 
