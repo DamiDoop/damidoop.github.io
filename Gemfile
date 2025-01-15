@@ -13,6 +13,7 @@ group :jekyll_plugins do
 end
 
 gem "json"
+gem "logger"
 gem "csv"
 gem "base64"
 gem "bigdecimal"

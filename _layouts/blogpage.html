@@ -8,7 +8,7 @@ layout: main
         <div class="title-bar-text">{{ page.title }}</div>
         <div class="title-bar-controls">
           <button aria-label="Minimize"></button>
-          <button aria-label="Close"><a href="/blog" style="opacity: 0;">.</a></button>
+          <button aria-label="Close" onclick="window.location.pathname = '/blog'"></button>
         </div>
       </div>
       <div class="status-bar">
@@ -21,12 +21,12 @@ layout: main
         </fieldset>
         <section class="field-row" style="justify-content: flex-end">
           {% if page.previous.url %}
-          <button><a href="{{ page.previous.url }}">Previous Post</a></button>
+          <button onclick="window.location.pathname = '{{ page.previous.url }}'">Previous Post</button>
           {% else %}
           <button disabled>Previous Post</button>
           {% endif %}
           {% if page.next.url %}
-          <button><a href="{{ page.next.url }}">Next Page</a></button>
+          <button onclick="window.location.pathname = '{{ page.next.url }}'">Next Page</button>
           {% else %}
           <button disabled>Next Post</button>
           {% endif %}
