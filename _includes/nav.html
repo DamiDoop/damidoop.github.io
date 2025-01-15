@@ -11,11 +11,9 @@
             <ul class="tree-view">
                 <li><a href="/">Home</a></li>
                 <li><a href="/aboutme">About Me</a></li>
-<!--                <li><a href="/pictures">Pictures</a></li>-->
                 <li>
                     <details>
-                        <summary><a href="/blog">Blog</a></summary>
-<!--                        <summary>Blog</summary>-->
+                        <summary><a href="/blog">Blog ({{ site.posts | size }} posts)</a></summary>
                         <ul>
                             {% for post in site.posts %}
                             <li><a href="{{ post.url }}">{{ post.title }}</a></li>
