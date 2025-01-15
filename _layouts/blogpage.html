@@ -20,16 +20,18 @@ layout: main
           {{ page.content }}
         </fieldset>
         <section class="field-row" style="justify-content: flex-end">
-          {% if page.previous.url %}
+          {% if page.previous.url and page.previous.hidden == null %}
           <button onclick="window.location.pathname = '{{ page.previous.url }}'">Previous Post</button>
           {% else %}
           <button disabled>Previous Post</button>
           {% endif %}
-          {% if page.next.url %}
-          <button onclick="window.location.pathname = '{{ page.next.url }}'">Next Page</button>
+
+          {% if page.next.url and page.next.hidden == null %}
+          <button onclick="window.location.pathname = '{{ page.next.url }}'">Next Post</button>
           {% else %}
           <button disabled>Next Post</button>
           {% endif %}
+
         </section>
       </div>
     </div>

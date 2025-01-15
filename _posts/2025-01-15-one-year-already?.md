@@ -40,7 +40,7 @@ the castle, it was an empty plot of land.
 As part of the first month of starting, I had to come up with a transportation solution for my lacking ability to sprint,
 because at walking speeds, even 40 blocks felt like a long distance trip. My solution was, naturally, a rail network.
 It was underground, beneath my pathways and the (one) bridge I had at the time, and connected my areas that, in newer
-versions of the game, would not have been far at all. It certainly was not pretty at the start, and sure took a long
+versions of the game, would not have been far at all. It certainly wasn’t pretty at the start, and sure took a long
 time to get to its current state, but it was incredibly handy.
 
 After that month, maybe a little more, I updated to Beta 1.8. I had already constructed myself a house, castle, and
@@ -63,4 +63,11 @@ enough lines to get to each cardinal direction.
 I just realised that I rambled on for two long paragraphs about my Minecraft rail system, so I'll talk about my castle
 town for at least a little bit.
 
-[//]: # (TODO: FINISH BLOG POST)
+The castle town construction started just before I updated to Beta 1.8, so the first two houses (plus the castle) were
+built with all the challenges that come with not having the Adventure Update. I've slowly worked on it over the past year, 
+of course. Slowly but surely, the town grew and spread fairly far north of the castle, and still has more room to grow
+(aka i haven't finished building inside houses lol).
+
+There are other things I’ve built over the past year, such as a sorta wizard's tower build made out of nether brick,
+netherrack, and stone bricks, and it houses my brewing stand and enchanting table. It is connected via rail, though isn't
+too far away should walking be necessary.
