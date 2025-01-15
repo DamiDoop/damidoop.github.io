@@ -24,6 +24,7 @@ layout: main
         {% endif %}
         <div class="row" style="margin-bottom:2rem">
             {% for post in year.items %}
+            {% if post.hidden == null %}
             <div class="col">
                 <div class="window" style="margin-bottom: 1em;">
                     <div class="title-bar">
@@ -53,6 +54,8 @@ layout: main
                     </div>
                 </div>
             </div>
+            {% else %}
+            {% endif %}
             {% endfor %}
         </div>
         {% endfor %}

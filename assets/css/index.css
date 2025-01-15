@@ -56,6 +56,23 @@ body {
 }
 
 @font-face {
-    font-family: departure-mono;
-    src: url("/assets/fonts-temp/DepartureMono-Regular.woff2"), url("/assets/fonts-temp/DepartureMono-Regular.otf") format("opentype");
+    font-family: 'Trebuchet MS';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Trebuchet MS'), url('/assets/fonts-temp/trebuchet/trebuc.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Trebuchet MS Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Trebuchet MS Italic'), url('/assets/fonts-temp/trebuchet/Trebuchet-MS-Italic.woff') format('woff');
+}
+
+button {
+    font-family: 'Trebuchet MS', 'Pixelated MS Sans Serif', sans-serif !important;
+}
+tree-view {
+    font-family: 'Trebuchet MS', 'Pixelated MS Sans Serif', sans-serif !important;
 }
