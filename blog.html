@@ -45,7 +45,7 @@ layout: main
                             <p>{{ post.desc }}</p>
                             {% endif %}
                         </fieldset>
-                        <button><a href="{{ post.url }}">Read More</a></button>
+                        <button onclick="window.location.pathname = '{{ post.url }}'">Read More</button>
                     </div>
                     <div class="status-bar">
                         <p class="status-bar-field">Author: {{ post.author}}</p>
