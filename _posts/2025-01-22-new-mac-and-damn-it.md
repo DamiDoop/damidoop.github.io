@@ -4,7 +4,7 @@ author: Maple
 layout: blogpage
 icon:
 desc: I recently purchase a mid-2007 Mac Mini, and I payed the ultimate price. It was a 
-soul for a soul.
+    soul for a soul.
 ---
 Just yesterday I purchased a mid-2007 Mac Mini on Facebook Marketplace for $20, which
 certainly isn't bad. It came with a power supply, 1GB (2x512mb) of DDR2 667mhz, and a 
