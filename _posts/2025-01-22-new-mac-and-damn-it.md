@@ -15,7 +15,7 @@ desc: I recently purchased a mid-2007 Mac Mini, and I payed the ultimate price. 
         </div>
     </div>
     <div class="window-body">
-        <img src="/assets/img/blog/Disaster/laptop-display" style="max-width: 100%"/>
+        <img src="/assets/img/blog/Disaster/laptop-display.jpg" style="max-width: 100%"/>
     </div>
       <div class="status-bar">
         <p class="status-bar-field">Yep, a shelf fell on that.</p>
