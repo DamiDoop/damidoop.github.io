@@ -3,7 +3,7 @@ title: I got a new Mac Mini, though it was a soul for a soul...
 author: Maple
 layout: blogpage
 icon:
-desc: I recently purchase a mid-2007 Mac Mini, and I payed the ultimate price. It was a 
+desc: I recently purchased a mid-2007 Mac Mini, and I payed the ultimate price. It was a 
     soul for a soul.
 ---
 Just yesterday I purchased a mid-2007 Mac Mini on Facebook Marketplace for $20, which
