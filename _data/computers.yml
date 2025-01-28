@@ -2,8 +2,8 @@
   desc: I use this one as a jack of all trades, as it runs Windows 11, ChromeOS, Fedora Linux, and macOS Monterey. It
       has come in handy more than a few times, especially as I don't own any modern Macs. I got this laptop late 2024 from
       a family member, and I've definitely made sure to put it to good use.
-  cpu: Intel i5 6300U
-  gpu: Intel HD Graphics 530
+  cpu: Intel i5 6200U
+  gpu: Intel HD Graphics 520
   ram: 2x4gb DDR4
   res: 1366x768
   ident: 1
@@ -11,8 +11,8 @@
 - name: HP ProBook 650 G2
   desc: This one is a replacement for the late 450 G3, so it will likely just end up becoming a pi-hole, or maybe I'll
     try proxmox again with it. As with the other 650 G2, this laptop was also given in late 2024 from that family member.
-  cpu: Intel i5 6300U
-  gpu: Intel HD Graphics 530
+  cpu: Intel i5 6200U
+  gpu: Intel HD Graphics 520
   ram: 1x4gb DDR4
   res: 1366x768
   ident: 2
@@ -40,7 +40,7 @@
   res: 1600x900
   ident: 4
   image: /assets/img/pictures/6570b-8.1.jpg
-- name: Mac Mini 2,1 (Mid-2007)
+- name: Apple Mac Mini 2,1 (Mid-2007)
   desc: I just got this computer (as of writing this) for $20 on FB Marketplace, and it's my first ever Mac. It is running
     Mac OS X 10.6.8 Snow Leopard and has been pretty fun to mess with. It doesn't run OSX slowly, but it certainly runs
     Debian 12 rather slowly. I also gotta say, I do like how the Mac Minis look.
@@ -79,3 +79,52 @@
   res: 1920x1080
   ident: 8
   image: /assets/img/pictures/XP-Machine.jpg
+- name: Apple iPad Mini 4 (5,2)
+  desc: My iPad that I got a couple years ago. I don't really use it, but I've jailbroken it on it's latest iPadOS, and
+    tweaked it a little. I suppose it has it's uses. (like being a second display for my laptop)
+  cpu: Apple A8
+  gpu: PowerVR GX6450
+  ram: 2gb (Soldered)
+  res: 1536x2048
+  image: /assets/img/pictures/iPadMini4.jpg
+- name: Valve Steam Deck (256gb LCD)
+  desc: I'm sure we all know what the Steam Deck is. It's awesome. I don't have too much to say on it, other than it was
+    so nice to bring it across the country with me. It helped keep me entertained for those long 6 hour car rides. Sorry
+    for the dusty pic lol
+  cpu: AMD Custom APU 0405
+  gpu: AMD ATI VanGogh
+  ram: 12gb (Soldered?)
+  res: 1280x800
+  image: /assets/img/pictures/dusty-ass-deck.jpg
+- name: HP ProBook 450 G3
+  desc: One of the laptops given to me in late 2024. It's battery didn't work but it had the best screen of all the laptops.
+    It was used briefly for Fedora Server 41 before being my testing grounds for proxmox. It was going to be a pi-hole,
+    but then met its untimely death when a shelf struck it. You can read more <a href="/2025/01/22/new-mac-and-damn-it">
+    here.</a>
+  cpu: Intel i5 6200U
+  gpu: Intel HD Graphics 520
+  ram: 4gb DDR4
+  res: 1920x1080
+  dead: true
+  image: /assets/img/blog/Disaster/laptop-display.jpg
+- name: Toshiba Satellite X200
+  desc: This laptop was never truly "mine", but I tried to fix it. It had a dead/dying GPU and I wanted to fix it.
+    Unfortunately for both me and it, this 17" laptop never even got reassembled. It would've been a really cool media
+    laptop to have, but it was not meant to be. I'm glad I salvaged the 4gb of DDR2 SODIMMs it had, as they are finally
+    coming in handy to upgrade my Mac Mini whenever I get the tools.
+  cpu: Intel Core 2 Duo T7300
+  gpu: Nvidia GeForce 8600M GT 256mb
+  ram: 4gb DDR2
+  res: 1680x1050
+  dead: true
+  image: /assets/img/pictures/X200.jpg
+- name: Surface Laptop Go
+  desc: I bought this laptop at the start of high school for CA$1,000 using money I saved up from a paper route I did.
+    It did good for the first few years, but when I had to do a test in grade 11, I put it to sleep by closing it, and it
+    never woke up again. It's really stupid.
+  cpu: Intel i5 1035G1
+  gpu: Intel UHD Graphics G1
+  ram: 8gb (Soldered)
+  res: 1536x1024
+  dead: true
+  image: /assets/img/pictures/surface.jpg

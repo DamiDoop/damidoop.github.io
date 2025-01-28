@@ -45,10 +45,10 @@
                 <div class="window-body">
                     {% include nav.html %}
                     <div style="margin-top: .5em;">
-                        <select id="theme-selector">
-                            <option id="xp-style" value="0">XP Theme</option>
-                            <option id="98-style" value="1">98 Theme</option>
-                            <option id="7-style" value="2">7 Theme</option>
+                        <select>
+                            <option id="stylesheet1">XP Theme</option>
+                            <option id="stylesheet2">98 Theme</option>
+                            <option id="stylesheet3">7 Theme</option>
                         </select>
                     </div>
                 </div>
@@ -76,49 +76,37 @@
 </body>
 
 <script>
-    window.addEventListener('load', initialize, false);
-    window.addEventListener('load', loadTheme, false);
-
     function swapStyleSheet(sheet) {
         document.getElementById("pagestyle").setAttribute("href", sheet);
     }
 
-    function initialize() {
-        let XPStyle = document.getElementById("xp-style");
-        let ninetyEightStyle = document.getElementById("98-style");
-        let sevenStyle = document.getElementById("7-style");
+    function initate() {
+        var style1 = document.getElementById("stylesheet1");
+        var style2 = document.getElementById("stylesheet2");
+        var style3 = document.getElementById("stylesheet3");
 
-        XPStyle.onclick = function () {
+        style1.onclick = function () {
             swapStyleSheet("https://unpkg.com/xp.css");
-            localStorage.setItem("theme", "XP");
-        }
-        ninetyEightStyle.onclick = function () {
+            localStorage.setItem("theme", "https://unpkg.com/xp.css");
+        };
+        style2.onclick = function () {
             swapStyleSheet("https://unpkg.com/xp.css@0.2.3/dist/98.css");
-            localStorage.setItem("theme", "98");
-        }
-        sevenStyle.onclick = function () {
+            localStorage.setItem("theme", "https://unpkg.com/xp.css@0.2.3/dist/98.css");
+        };
+        style3.onclick = function () {
             swapStyleSheet("https://unpkg.com/7.css")
-            localStorage.setItem("theme", "7");
-        }
+            localStorage.setItem("theme", "https://unpkg.com/7.css");
+        };
     }
 
-    function loadTheme() {
-        let currentTheme = localStorage.getItem("theme");
-        let themeSelect = document.getElementById("theme-selector");
-
-        switch (currentTheme) {
-            case "XP":
-                swapStyleSheet("https://unpkg.com/xp.css");
-                themeSelect.value = "0";
-                break
-            case "98":
-                swapStyleSheet("https://unpkg.com/98.css");
-                themeSelect.value = "1";
-                break
-            case "7":
-                swapStyleSheet("https://unpkg.com/7.css");
-                themeSelect.value = "2";
-                break
+    window.onload = function () {
+        if (localStorage.getItem("theme") == "https://unpkg.com/xp.css") {
+            swapStyleSheet("https://unpkg.com/xp.css");
+        } else if (localStorage.getItem("theme") == "https://unpkg.com/xp.css@0.2.3/dist/98.css") {
+            swapStyleSheet("https://unpkg.com/xp.css@0.2.3/dist/98.css");
+        } else if (localStorage.getItem("theme") == "https://unpkg.com/7.css") {
+            swapStyleSheet("https://unpkg.com/7.css");
         }
+        initate();
     }
 </script>
