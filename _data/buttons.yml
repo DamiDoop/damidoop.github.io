@@ -1,0 +1,16 @@
+- name: any-browser
+  img: /assets/img/pictures/buttons/any_browser.gif
+  tag: fun
+- name: BMH Online
+  img: /assets/img/pictures/buttons/bmhonline_button.gif
+  link: https://bmh.neocities.org/
+  tag: cool
+- name: iam-can
+  img: /assets/img/pictures/buttons/can_iam.gif
+  tag: fun
+- name: linux-powered
+  img: /assets/img/pictures/buttons/linux_powered.gif
+  tag: fun
+- name: best-viewed-with
+  img: /assets/img/pictures/buttons/bestview.gif
+  tag: fun
