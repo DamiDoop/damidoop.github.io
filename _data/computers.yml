@@ -1,0 +1,81 @@
+- name: HP ProBook 650 G2
+  desc: I use this one as a jack of all trades, as it runs Windows 11, ChromeOS, Fedora Linux, and macOS Monterey. It
+      has come in handy more than a few times, especially as I don't own any modern Macs. I got this laptop late 2024 from
+      a family member, and I've definitely made sure to put it to good use.
+  cpu: Intel i5 6300U
+  gpu: Intel HD Graphics 530
+  ram: 2x4gb DDR4
+  res: 1366x768
+  ident: 1
+  image: /assets/img/pictures/650G2-macOS.jpg
+- name: HP ProBook 650 G2
+  desc: This one is a replacement for the late 450 G3, so it will likely just end up becoming a pi-hole, or maybe I'll
+    try proxmox again with it. As with the other 650 G2, this laptop was also given in late 2024 from that family member.
+  cpu: Intel i5 6300U
+  gpu: Intel HD Graphics 530
+  ram: 1x4gb DDR4
+  res: 1366x768
+  ident: 2
+- name: Lenovo Thinkpad T480
+  desc: My T480. I got it for school after my Surface Laptop Go failed on me, and it has been rock solid since. I know
+    that it is an aging laptop, but it still runs absolutely flawlessly on linux. I was previously running Fedora 41 on
+    it, though I switched to Universal Blue's Aurora 41 because I wanted to try out an immutable distribution. Despite
+    having the T480 for less time than some of the other computers, it has gone on quite the journey! It's been from my
+    home in southwestern Ontario all the way to the west coast in Vancouver, and it's got the stickers to prove it!
+  cpu: Intel i5 8350U
+  gpu: Intel UHD Graphics 620
+  ram: 2x8gb DDR4
+  res: 1920x1080
+  ident: 3
+  image: /assets/img/pictures/t480.jpg
+- name: HP ProBook 6570b
+  desc: I got this laptop back in 2018 from that aforementioned family member, and it served me well through school,
+    until it got too old and I just wasn't tech-savvy enough to help it. It went out of commission for a while, until
+    about late 2023 when my Surface died. Since then, this laptop got me through computer science classes, and I've even
+    fallen directly onto it while going to school. I expect this ProBook to live longer than the others I own. This
+    ProBook runs both Windows 8.1 and Gentoo Linux.
+  cpu: Intel i5 3230M
+  gpu: Intel HD Graphics 4000
+  ram: 2x8gb DDR3
+  res: 1600x900
+  ident: 4
+  image: /assets/img/pictures/6570b-8.1.jpg
+- name: Mac Mini 2,1 (Mid-2007)
+  desc: I just got this computer (as of writing this) for $20 on FB Marketplace, and it's my first ever Mac. It is running
+    Mac OS X 10.6.8 Snow Leopard and has been pretty fun to mess with. It doesn't run OSX slowly, but it certainly runs
+    Debian 12 rather slowly. I also gotta say, I do like how the Mac Minis look.
+  cpu: Intel Core 2 Duo (T5600)
+  gpu: GMA 950 Chipset
+  ram: 2x512mb DDR2
+  res: 1920x1080
+  ident: 5
+  image: /assets/img/blog/Disaster/mac-mini.jpg
+- name: Main Desktop
+  desc: I built this desktop back in April of 2020, and it has served me well ever since. It started with Windows 10, but
+    has followed me on my Linux journey through Pop!_OS, Manjaro, and it's final distro for the past several years, Arch
+    Linux.
+  cpu: AMD Ryzen 5 5600X
+  gpu: Nvidia GTX 1660
+  ram: 4x8gb DDR4
+  res: Triple 1920x1080
+  ident: 6
+  image: /assets/img/pictures/Desktop.jpg
+- name: My Server
+  desc: Using a motherboard and SSD I got in 2023, I used my desktop's old CPU to build a server that was an upgrade from
+    the last components. I have Ubuntu Server 24.04.1 installed and it has been running plenty of services since I made it,
+    and I don't know what I'd use if not those services.
+  cpu: AMD Ryzen 5 2600
+  gpu: --
+  ram: 1x8gb DDR4
+  res: --
+  ident: 7
+  image: /assets/img/pictures/Server.jpg
+- name: XP/7 Machine
+  desc: This was my old server, which at the time lacked a GPU. Currently, I use it for Windows XP and Windows 7 as the
+    early 2010s hardware has good driver support for both. It's come in handy for CD ripping and burning.
+  cpu: AMD A10 APU
+  gpu: Nvidia GTX 660
+  ram: 2x4gb DDR4
+  res: 1920x1080
+  ident: 8
+  image: /assets/img/pictures/XP-Machine.jpg

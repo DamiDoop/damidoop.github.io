@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=640">
+        <title>ungrid - the simplest responsive css grid</title>
+        <link href="ungrid.min.css" rel="stylesheet">
+        <link href="docs.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <div class="header">
+            <h1><a href="//github.com/chrisnager/ungrid">ungrid</a></h1>
+            <p>by <a href="//twitter.com/chrisnager">@chrisnager</a></p>
+            <h2>the simplest responsive css grid</h2>
+        </div>
+
+        <div class="info">
+            <div class="info__inner">
+                <p><b>ungrid</b> is a responsive, table-based CSS grid system. To use, simply put as many <code>.col</code>s as you wish in your <code>.row</code>s and the <code>.col</code>s will automatically be evenly spaced. This allows you to roll your own simple grids.</p>
+                <p><iframe src="http://ghbtns.com/github-btn.html?user=chrisnager&amp;repo=ungrid&amp;type=watch&amp;size=large" allowtransparency="true" frameborder="0" scrolling="0" width="77px" height="30px"></iframe></p>
+                <hr>
+                <p>ungrid.css (97 bytes minified):</p>
+                <pre><code>@media (min-width: 30em) {
+    .row { width: 100%; display: table; table-layout: fixed; }
+    .col { display: table-cell; }
+}</code></pre>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">&#9884;</div>
+        </div>
+
+        <div class="row">
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+        </div>
+
+        <div class="row">
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+        </div>
+
+        <div class="row">
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+        </div>
+
+        <div class="row">
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+        </div>
+
+        <div class="row">
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+        </div>
+
+        <div class="row">
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+        </div>
+
+        <div class="row">
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+        </div>
+
+        <div class="row">
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+        </div>
+
+        <div class="row">
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+            <div class="col">&#9884;</div>
+        </div>
+
+         <div class="info">
+            <div class="info__inner">
+                <h2>Need specific column widths?</h2>
+                <p>Go for it. Both fixed and percentage base widths work perfectly. You can even use them together. The remaining columns will take up the rest of the available space.</p>
+            </div>
+        </div>
+
+       <div class="row">
+            <div class="col" style="width:80%">80%</div>
+            <div class="col">&#9884;</div>
+        </div>
+
+       <div class="row">
+            <div class="col" style="width:40%">40%</div>
+            <div class="col" style="width:20%">20%</div>
+            <div class="col" style="width:40%">40%</div>
+        </div>
+
+        <div class="row">
+            <div class="col">&#9884;</div>
+            <div class="col" style="width:425px">425px</div>
+        </div>
+
+        <div class="row">
+            <div class="col" style="width:15%">15%</div>
+            <div class="col" style="width:200px">200px</div>
+            <div class="col">&#9884;</div>
+            <div class="col" style="width:25%">25%</div>
+        </div>
+
+        <div class="footer">
+            <p><b>ungrid</b> on <a href="//github.com/chrisnager/ungrid">github</a> &middot; crafted by <a href="//twitter.com/chrisnager">@chrisnager</a> &middot; try it out on <a href="//codepen.io/chrisnager/pen/ypokv">codepen</a></p>
+        </div>
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-48485384-1', 'chrisnager.github.io');
+            ga('send', 'pageview');
+        </script>
+    </body>
+</html>

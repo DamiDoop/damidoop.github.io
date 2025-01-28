@@ -21,7 +21,7 @@ a.outofwindow {
 .clearfix {
     overflow: auto;
 }
-@media (min-width:800px) {
+@media (min-width:800px) and (orientation: landscape) {
     nav {
         float: left;
         width: 25%;
@@ -30,14 +30,13 @@ a.outofwindow {
         margin-left: 25%;
     }
 }
-@media (max-width:799px) {
+@media (max-width:799px) or (orientation: portrait) {
     #main {
         width: 80%;
         margin: 0 auto;
     }
     nav {
         display: block;
-        width: 25%;
     }
     section {
         margin-left: 0%;
@@ -75,4 +74,16 @@ button {
 }
 tree-view {
     font-family: 'Trebuchet MS', 'Pixelated MS Sans Serif', sans-serif !important;
+}
+pre {
+    display: block;
+    padding: 12px 8px;
+    background-color: black;
+    color: #c0c0c0;
+    font-family: "Perfect DOS VGA 437 Win";
+    font-size: 1rem;
+    margin: 0;
+    * {
+        font-family: "Perfect DOS VGA 437 Win";
+    }
 }

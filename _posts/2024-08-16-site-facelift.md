@@ -48,17 +48,17 @@ The image displayed on the blog page is defined with the `icon` variable in the 
 If the image is too large, it will set to horizontally centre, and be scrolled to the top (if applicable).
 
 ##### Complete front matter
-A fully complete front matter for a blog article should looked similar to the following:
+A fully complete front matter for a blog article should look similar to the following:
 
-`---`<br>
-`title: Blog Article Title`<br>
-`author: Your Name`<br>
-`layout: blogpage`<br>
-`icon: https://example.com/example.png`<br>
-`desc: An Optional Description`<br>
-`---`
+<pre>---
+title: Blog Article Title<br>
+author: Your Name<br>
+layout: blogpage<br>
+icon: https://example.com/example.png<br>
+desc: An Optional Description<br>
+---</pre>
 
-If you need an example that is in-use, the article [Enabling the Hidden Wii DVD Icon, Part 3](https://ncxprogramming.com/2023/06/19/wii-dvd-p3.html) has both an attached image and a custom description set.
+If you need an example in use, the article [Enabling the Hidden Wii DVD Icon, Part 3](https://ncxprogramming.com/2023/06/19/wii-dvd-p3.html) has both an attached image and a custom description set.
 
 ## Conclusion
 I don't have a good conclusion to write, but I hope you like the site redesign. If you wanted to see what this site looked like before this overhaul, you can check it out in the See Also section of this article<sup>3</sup>.

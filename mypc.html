@@ -1,0 +1,76 @@
+---
+title: My Computers
+layout: main
+---
+
+<style>
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .flex-container > div {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        margin: 5px;
+        padding: 5px;
+        min-width: 22%;
+        max-width: 22%
+    }
+</style>
+<section style="margin-bottom: 1em;">
+    <div class="window">
+        <div class="title-bar">
+            <div class="title-bar-text">My Computers</div>
+        </div>
+        <div class="window-body">
+            <fieldset>
+                <p>Unfortunately for the future money I will earn, I think I'm going to get into some minor computer
+                collecting. I already have quite a few computers, but they all serve a purpose. I'm just gonna use
+                this page to keep track of the computers, their story, and what I use them for. The "More Details"
+                button would make a popup with a paragraph about the computer, but I could not get modals to work with
+                Jekyll's Liquid. If anyone reading has an idea, let me know on GitHub, please!</p>
+            </fieldset>
+            <fieldset>
+                <legend>Computers</legend>
+                <div class="container">
+                    <div class="flex-container">
+                        {% for computer in site.data.computers %}
+                        <div>
+                            {% if computer.image %}
+                            <img src="{{ computer.image }}" alt="{{ computer.name }}" style="width:100%">
+                            {% endif %}
+                            <p><strong>{{ computer.name }}</strong></p>
+                            <p>CPU: {{ computer.cpu }}</p>
+                            <p>GPU: {{ computer.gpu }}</p>
+                            <p>RAM: {{ computer.ram }}</p>
+                            <p>Resolution: {{ computer.res }}</p>
+                            <p><strong>Description:</strong><br>{{ computer.desc }}</p>
+<!--                            <button disabled>More Details</button>-->
+                        </div>
+<!--                        <div class="popup">-->
+<!--                            <div class="window" style="width: 300px">-->
+<!--                                <div class="title-bar">-->
+<!--                                    <div class="title-bar-text">A Window With Stuff In It</div>-->
+<!--                                    <div class="title-bar-controls">-->
+<!--                                        <button aria-label="Close" id="closebtn{{ computer.ident }}"></button>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="window-body">-->
+<!--                                    <fieldset>-->
+<!--                                        <p><strong>{{ computer.name }}</strong></p>-->
+<!--                                        <p>CPU: {{ computer.cpu }}</p>-->
+<!--                                        <p>GPU: {{ computer.gpu }}</p>-->
+<!--                                        <p>RAM: {{ computer.ram }}</p>-->
+<!--                                        <p>Resolution: {{ computer.res }}</p>-->
+<!--                                        <p><br>Description:<br>{{ computer.desc }}</p>-->
+<!--                                    </fieldset>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+                        {% endfor %}
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+</section>

@@ -21,15 +21,15 @@ layout: main
         </fieldset>
         <section class="field-row" style="justify-content: flex-end">
           {% if page.previous.url and page.previous.hidden == null %}
-          <button onclick="window.location.pathname = '{{ page.previous.url }}'">Previous Post</button>
+          <button class="btn" onclick="window.location.pathname = '{{ page.previous.url }}'">Previous Post</button>
           {% else %}
-          <button disabled>Previous Post</button>
+          <button class="btn"  disabled>Previous Post</button>
           {% endif %}
 
           {% if page.next.url and page.next.hidden == null %}
-          <button onclick="window.location.pathname = '{{ page.next.url }}'">Next Post</button>
+          <button class="btn" onclick="window.location.pathname = '{{ page.next.url }}'">Next Post</button>
           {% else %}
-          <button disabled>Next Post</button>
+          <button class="btn" disabled>Next Post</button>
           {% endif %}
 
         </section>

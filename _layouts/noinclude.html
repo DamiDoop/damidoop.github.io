@@ -1,0 +1,25 @@
+<style>
+  body {
+    background-image: url("/assets/img/leaves.webp")
+  }
+  @media (min-width: 30em) {
+    .urow { width: 100%; display: table; table-layout: fixed; }
+    .ucol { display: table-cell; }
+  }
+
+</style>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="https://unpkg.com/xp.css" />
+  <link rel="stylesheet" href="/assets/css/index.css"/>
+  <!--    <link rel="stylesheet" href="https://unpkg.com/xp.css@0.2.3/dist/98.css" />-->
+  <title>{{ page.title }} | {{ site.title }}</title>
+</head>
+<body class="container">
+<div class="title">
+  <p style="font-family: InterVariable, Inter, sans-serif">DAMIDOOP XYZ</p>
+</div>
+<div id="main" class="clearfix">
+  {{ content }}
+</div>
+</body>

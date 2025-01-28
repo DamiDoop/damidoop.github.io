@@ -1,90 +1,79 @@
-<nav>
-    <div class="window" style="margin-right: 1em; margin-bottom: 1em;">
-        <div class="title-bar">
-            <div class="title-bar-text">Navigation</div>
-            <div class="title-bar-controls">
-                <button aria-label="Minimize"></button>
-                <button aria-label="Close"></button>
-            </div>
-        </div>
-        <div class="window-body">
-            <ul class="tree-view">
-                <li><a href="/">Home</a></li>
-                <li><a href="/aboutme">About Me</a></li>
+
+<ul class="tree-view has-collapse-button has-connector has-container has-space">
+    <li><a href="/">Home</a></li>
+    <li><a href="/aboutme">About Me</a></li>
+    <li><a href="/mypc">My Computers</a></li>
+    <li>
+        <details>
+            <summary><a href="/blog">Blog ({{ site.posts | size }} posts)</a></summary>
+            <ul>
+                {% for post in site.posts %}
+                {% unless post.hidden == true %}
+                <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                {% endunless %}
+                {% endfor %}
+            </ul>
+        </details>
+    </li>
+    <li>
+        <details open>
+            <summary>Projects</summary>
+            <ul>
+                {% for project in site.data.projects-maintained %}
+                {% if project.school == null and project.archive == null%}
+                <li><a href="/projects/{{ project.name }}">{{ project.truename }}</a></li>
+                {% else %}
+                {% endif %}
+                {% endfor %}
                 <li>
                     <details>
-                        <summary><a href="/blog">Blog ({{ site.posts | size }} posts)</a></summary>
-                        <ul>
-                            {% for post in site.posts %}
-                            {% unless post.hidden == true %}
-                            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-                            {% endunless %}
-                            {% endfor %}
-                        </ul>
-                    </details>
-                </li>
-                <li>
-                    <details open>
-                        <summary>Projects</summary>
+                        <summary>School Projects</summary>
                         <ul>
                             {% for project in site.data.projects-maintained %}
-                            {% if project.school == null and project.archive == null%}
+                            {% if project.school == true and project.archive == null%}
                             <li><a href="/projects/{{ project.name }}">{{ project.truename }}</a></li>
                             {% else %}
                             {% endif %}
                             {% endfor %}
-                            <li>
-                                <details>
-                                    <summary>School Projects</summary>
-                                    <ul>
-                                        {% for project in site.data.projects-maintained %}
-                                        {% if project.school == true and project.archive == null%}
-                                        <li><a href="/projects/{{ project.name }}">{{ project.truename }}</a></li>
-                                        {% else %}
-                                        {% endif %}
-                                        {% endfor %}
-                                    </ul>
-                                </details>
-                            </li>
-                            <li>
-                                <details>
-                                    <summary>Archived Projects</summary>
-                                    <ul>
-                                        {% for project in site.data.projects-maintained %}
-                                        {% if project.archive == true %}
-                                        <li><a href="/projects/{{ project.name }}">{{ project.truename }}</a></li>
-                                        {% else %}
-                                        {% endif %}
-                                        {% endfor %}
-                                    </ul>
-                                </details>
-                            </li>
                         </ul>
                     </details>
                 </li>
                 <li>
                     <details>
-                        <summary>Archives</summary>
+                        <summary>Archived Projects</summary>
                         <ul>
-                            {% for archive in site.data.archives %}
-                            <li><a href="{{ archive.link }}">{{ archive.truename }} <i class="bi bi-box-arrow-up-right"></i></a></li>
+                            {% for project in site.data.projects-maintained %}
+                            {% if project.archive == true %}
+                            <li><a href="/projects/{{ project.name }}">{{ project.truename }}</a></li>
+                            {% else %}
+                            {% endif %}
                             {% endfor %}
                         </ul>
                     </details>
                 </li>
-                <li>
-                    <details>
-                        <summary>Services</summary>
-                        <ul>
-                            {% for service in site.data.services %}
-                            <li><a href="{{ service.link }}">{{ service.name }}</a></li>
-                            {% endfor %}
-                        </ul>
-                    </details>
-                </li>
-                <li><a href="/contactme">Contact Me</a></li>
-                <li><a href="https://github.com/DamiDoop/damidoop.github.io">Website Repository</a></li>
             </ul>
-        </div>
-    </div>
-</nav>
+        </details>
+    </li>
+    <li>
+        <details>
+            <summary>Archives</summary>
+            <ul>
+                {% for archive in site.data.archives %}
+                <li><a href="{{ archive.link }}">{{ archive.truename }} <i class="bi bi-box-arrow-up-right"></i></a></li>
+                {% endfor %}
+            </ul>
+        </details>
+    </li>
+    <li>
+        <details>
+            <summary>Services</summary>
+            <ul>
+                {% for service in site.data.services %}
+                <li><a href="{{ service.link }}">{{ service.name }}</a></li>
+                {% endfor %}
+            </ul>
+        </details>
+    </li>
+    <li><a href="/contactme">Contact Me</a></li>
+    <li><a href="https://github.com/DamiDoop/damidoop.github.io">Website Repository</a></li>
+</ul>

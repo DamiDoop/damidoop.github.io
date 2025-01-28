@@ -1,0 +1,25 @@
+<style>
+    @import 'assets/bootstrap/css/bootstrap.css';
+
+    .discord-img {
+        src: url("https://cdn.ncxprogramming.com/file/image/navbar/discord-light.svg");
+    }
+
+    .github-img {
+        src: url("https://cdn.ncxprogramming.com/file/image/navbar/github-light.svg");
+    }
+
+    [data-bs-theme=dark] .discord-img {
+        src: url("https://cdn.ncxprogramming.com/file/image/navbar/discord-dark.svg");
+    }
+    [data-bs-theme=dark] .github-img {
+        src: url("https://cdn.ncxprogramming.com/file/image/navbar/github-dark.svg");
+    }
+</style>
+<footer class="footer bg-body-secondary text-lg-start border-top align-items-center text-center" style="position: absolute; bottom: 0; width: 100%;">
+    <div class="text-center p-3 align-items-center">
+        Copyright &copy; 2020-<span id="footerDate"></span> NCX Programming. <a href="/contactus" class="text-reset fw-bold">Contact us.</a>
+        <br>
+        <span class="nav col-md-4 list-unstyled d-inline"><a href="https://github.com/NCX-Programming"><img class="bi github-img" width="24" height="24" src="https://cdn.ncxprogramming.com/file/image/navbar/github-dark.svg" alt=""></a> <a href="https://discord.gg/TbPXuFr"><img class="bi discord-img" width="24" height="24" src="https://cdn.ncxprogramming.com/file/image/navbar/discord-dark.svg" alt=""></a></span>
+    </div>
+</footer>
