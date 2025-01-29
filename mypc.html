@@ -1,6 +1,6 @@
 ---
 title: My Computers
-layout: main
+layout: main-pc
 ---
 
 <style>
@@ -35,7 +35,7 @@ layout: main
                 <div class="container">
                     <div class="flex-container">
                         {% for computer in site.data.computers %}
-                        {% if computer.dead == null %}
+                        {% if computer.tag == "alive" %}
                         <div>
                             {% if computer.image %}
                             <img src="{{ computer.image }}" alt="{{ computer.name }}" style="width:100%">
@@ -46,29 +46,13 @@ layout: main
                             <p>RAM: {{ computer.ram }}</p>
                             <p>Resolution: {{ computer.res }}</p>
                             <p><strong>Description:</strong><br>{{ computer.desc }}</p>
-<!--                            <button disabled>More Details</button>-->
+                            {% if computer.doc %}
+                            <button onclick="window.location = '{{ computer.doc }}'">User Manual</button>
+                            {% else %}
+                            <button disabled>User Manual</button>
+                            {% endif %}
                         </div>
                         {% endif %}
-<!--                        <div class="popup">-->
-<!--                            <div class="window" style="width: 300px">-->
-<!--                                <div class="title-bar">-->
-<!--                                    <div class="title-bar-text">A Window With Stuff In It</div>-->
-<!--                                    <div class="title-bar-controls">-->
-<!--                                        <button aria-label="Close" id="closebtn{{ computer.ident }}"></button>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="window-body">-->
-<!--                                    <fieldset>-->
-<!--                                        <p><strong>{{ computer.name }}</strong></p>-->
-<!--                                        <p>CPU: {{ computer.cpu }}</p>-->
-<!--                                        <p>GPU: {{ computer.gpu }}</p>-->
-<!--                                        <p>RAM: {{ computer.ram }}</p>-->
-<!--                                        <p>Resolution: {{ computer.res }}</p>-->
-<!--                                        <p><br>Description:<br>{{ computer.desc }}</p>-->
-<!--                                    </fieldset>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
                         {% endfor %}
                     </div>
                 </div>
@@ -91,10 +75,10 @@ layout: main
                 <div class="container">
                     <div class="flex-container">
                         {% for computer in site.data.computers %}
-                        {% if computer.dead %}
+                        {% if computer.tag == "dead" %}
                         <div>
                             {% if computer.image %}
-                            <img src="{{ computer.image }}" alt="{{ computer.name }}" style="width:100%">
+                            <img src="{{ computer.image }}" alt="{{ computer.name }}" style="width:100%;">
                             {% endif %}
                             <p><strong>{{ computer.name }}</strong></p>
                             <p>CPU: {{ computer.cpu }}</p>
@@ -102,29 +86,13 @@ layout: main
                             <p>RAM: {{ computer.ram }}</p>
                             <p>Resolution: {{ computer.res }}</p>
                             <p><strong>Description:</strong><br>{{ computer.desc }}</p>
-                            <!--                            <button disabled>More Details</button>-->
+                            {% if computer.doc %}
+                            <button onclick="window.location = '{{ computer.doc }}'">User Manual</button>
+                            {% else %}
+                            <button disabled>User Manual</button>
+                            {% endif %}
                         </div>
                         {% endif %}
-                        <!--                        <div class="popup">-->
-                        <!--                            <div class="window" style="width: 300px">-->
-                        <!--                                <div class="title-bar">-->
-                        <!--                                    <div class="title-bar-text">A Window With Stuff In It</div>-->
-                        <!--                                    <div class="title-bar-controls">-->
-                        <!--                                        <button aria-label="Close" id="closebtn{{ computer.ident }}"></button>-->
-                        <!--                                    </div>-->
-                        <!--                                </div>-->
-                        <!--                                <div class="window-body">-->
-                        <!--                                    <fieldset>-->
-                        <!--                                        <p><strong>{{ computer.name }}</strong></p>-->
-                        <!--                                        <p>CPU: {{ computer.cpu }}</p>-->
-                        <!--                                        <p>GPU: {{ computer.gpu }}</p>-->
-                        <!--                                        <p>RAM: {{ computer.ram }}</p>-->
-                        <!--                                        <p>Resolution: {{ computer.res }}</p>-->
-                        <!--                                        <p><br>Description:<br>{{ computer.desc }}</p>-->
-                        <!--                                    </fieldset>-->
-                        <!--                                </div>-->
-                        <!--                            </div>-->
-                        <!--                        </div>-->
                         {% endfor %}
                     </div>
                 </div>

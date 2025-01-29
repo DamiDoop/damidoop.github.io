@@ -1,3 +1,4 @@
+# Alive
 - name: HP ProBook 650 G2
   desc: I use this one as a jack of all trades, as it runs Windows 11, ChromeOS, Fedora Linux, and macOS Monterey. It
       has come in handy more than a few times, especially as I don't own any modern Macs. I got this laptop late 2024 from
@@ -6,8 +7,10 @@
   gpu: Intel HD Graphics 520
   ram: 2x4gb DDR4
   res: 1366x768
-  ident: 1
-  image: /assets/img/pictures/650G2-macOS.jpg
+  tag: alive
+  image: /assets/img/pictures/Computers/650G2-macOS.jpg
+  doc: /assets/documents/probook_650_g2.pdf
+
 - name: HP ProBook 650 G2
   desc: This one is a replacement for the late 450 G3, so it will likely just end up becoming a pi-hole, or maybe I'll
     try proxmox again with it. As with the other 650 G2, this laptop was also given in late 2024 from that family member.
@@ -15,19 +18,23 @@
   gpu: Intel HD Graphics 520
   ram: 1x4gb DDR4
   res: 1366x768
-  ident: 2
+  tag: alive
+  doc: /assets/documents/probook_650_g2.pdf
+
 - name: Lenovo Thinkpad T480
   desc: My T480. I got it for school after my Surface Laptop Go failed on me, and it has been rock solid since. I know
     that it is an aging laptop, but it still runs absolutely flawlessly on linux. I was previously running Fedora 41 on
     it, though I switched to Universal Blue's Aurora 41 because I wanted to try out an immutable distribution. Despite
-    having the T480 for less time than some of the other computers, it has gone on quite the journey! It's been from my
+    having the T480 for less time than some of the other Computers, it has gone on quite the journey! It's been from my
     home in southwestern Ontario all the way to the west coast in Vancouver, and it's got the stickers to prove it!
   cpu: Intel i5 8350U
   gpu: Intel UHD Graphics 620
   ram: 2x8gb DDR4
   res: 1920x1080
-  ident: 3
-  image: /assets/img/pictures/t480.jpg
+  tag: alive
+  image: /assets/img/pictures/Computers/t480.jpg
+  doc: /assets/documents/thinkpad_t480.pdf
+
 - name: HP ProBook 6570b
   desc: I got this laptop back in 2018 from that aforementioned family member, and it served me well through school,
     until it got too old and I just wasn't tech-savvy enough to help it. It went out of commission for a while, until
@@ -38,8 +45,10 @@
   gpu: Intel HD Graphics 4000
   ram: 2x8gb DDR3
   res: 1600x900
-  ident: 4
-  image: /assets/img/pictures/6570b-8.1.jpg
+  tag: alive
+  image: /assets/img/pictures/Computers/6570b-8.1.jpg
+  doc: /assets/documents/probook_6475b.pdf
+
 - name: Apple Mac Mini 2,1 (Mid-2007)
   desc: I just got this computer (as of writing this) for $20 on FB Marketplace, and it's my first ever Mac. It is running
     Mac OS X 10.6.8 Snow Leopard and has been pretty fun to mess with. It doesn't run OSX slowly, but it certainly runs
@@ -48,8 +57,10 @@
   gpu: GMA 950 Chipset
   ram: 2x512mb DDR2
   res: 1920x1080
-  ident: 5
+  tag: alive
   image: /assets/img/blog/Disaster/mac-mini.jpg
+  doc: /assets/documents/mac_mini_2,1.pdf
+
 - name: Main Desktop
   desc: I built this desktop back in April of 2020, and it has served me well ever since. It started with Windows 10, but
     has followed me on my Linux journey through Pop!_OS, Manjaro, and it's final distro for the past several years, Arch
@@ -58,8 +69,9 @@
   gpu: Nvidia GTX 1660
   ram: 4x8gb DDR4
   res: Triple 1920x1080
-  ident: 6
-  image: /assets/img/pictures/Desktop.jpg
+  tag: alive
+  image: /assets/img/pictures/Computers/Desktop.jpg
+
 - name: My Server
   desc: Using a motherboard and SSD I got in 2023, I used my desktop's old CPU to build a server that was an upgrade from
     the last components. I have Ubuntu Server 24.04.1 installed and it has been running plenty of services since I made it,
@@ -68,8 +80,9 @@
   gpu: --
   ram: 1x8gb DDR4
   res: --
-  ident: 7
-  image: /assets/img/pictures/Server.jpg
+  tag: alive
+  image: /assets/img/pictures/Computers/Server.jpg
+
 - name: XP/7 Machine
   desc: This was my old server, which at the time lacked a GPU. Currently, I use it for Windows XP and Windows 7 as the
     early 2010s hardware has good driver support for both. It's come in handy for CD ripping and burning.
@@ -77,8 +90,9 @@
   gpu: Nvidia GTX 660
   ram: 2x4gb DDR4
   res: 1920x1080
-  ident: 8
-  image: /assets/img/pictures/XP-Machine.jpg
+  tag: alive
+  image: /assets/img/pictures/Computers/XP-Machine.jpg
+
 - name: Apple iPad Mini 4 (5,2)
   desc: My iPad that I got a couple years ago. I don't really use it, but I've jailbroken it on it's latest iPadOS, and
     tweaked it a little. I suppose it has it's uses. (like being a second display for my laptop)
@@ -86,7 +100,10 @@
   gpu: PowerVR GX6450
   ram: 2gb (Soldered)
   res: 1536x2048
-  image: /assets/img/pictures/iPadMini4.jpg
+  image: /assets/img/pictures/Computers/iPadMini4.jpg
+  tag: alive
+  doc: /assets/documents/ipad_5,2.pdf
+
 - name: Valve Steam Deck (256gb LCD)
   desc: I'm sure we all know what the Steam Deck is. It's awesome. I don't have too much to say on it, other than it was
     so nice to bring it across the country with me. It helped keep me entertained for those long 6 hour car rides. Sorry
@@ -95,7 +112,10 @@
   gpu: AMD ATI VanGogh
   ram: 12gb (Soldered?)
   res: 1280x800
-  image: /assets/img/pictures/dusty-ass-deck.jpg
+  image: /assets/img/pictures/Computers/dusty-ass-deck.jpg
+  tag: alive
+
+# Dead
 - name: HP ProBook 450 G3
   desc: One of the laptops given to me in late 2024. It's battery didn't work but it had the best screen of all the laptops.
     It was used briefly for Fedora Server 41 before being my testing grounds for proxmox. It was going to be a pi-hole,
@@ -105,10 +125,12 @@
   gpu: Intel HD Graphics 520
   ram: 4gb DDR4
   res: 1920x1080
-  dead: true
+  tag: dead
   image: /assets/img/blog/Disaster/laptop-display.jpg
+  doc: /assets/documents/probook_450_g3.pdf
+
 - name: Toshiba Satellite X200
-  desc: This laptop was never truly "mine", but I tried to fix it. It had a dead/dying GPU and I wanted to fix it.
+  desc: This laptop was never truly "mine", but I tried to fix it. It had a tag/dying GPU and I wanted to fix it.
     Unfortunately for both me and it, this 17" laptop never even got reassembled. It would've been a really cool media
     laptop to have, but it was not meant to be. I'm glad I salvaged the 4gb of DDR2 SODIMMs it had, as they are finally
     coming in handy to upgrade my Mac Mini whenever I get the tools.
@@ -116,8 +138,10 @@
   gpu: Nvidia GeForce 8600M GT 256mb
   ram: 4gb DDR2
   res: 1680x1050
-  dead: true
-  image: /assets/img/pictures/X200.jpg
+  tag: dead
+  image: /assets/img/pictures/Computers/X200.jpg
+  doc: /assets/documents/satellite_x200_satellite_x205.pdf
+
 - name: Surface Laptop Go
   desc: I bought this laptop at the start of high school for CA$1,000 using money I saved up from a paper route I did.
     It did good for the first few years, but when I had to do a test in grade 11, I put it to sleep by closing it, and it
@@ -126,5 +150,32 @@
   gpu: Intel UHD Graphics G1
   ram: 8gb (Soldered)
   res: 1536x1024
-  dead: true
-  image: /assets/img/pictures/surface.jpg
+  tag: dead
+  image: /assets/img/pictures/Computers/surface.jpg
+
+# Want
+- name: Lenovo Thinkpad X220
+  desc:
+  img:
+  tag: want
+
+- name: IBM Thinkpad X60
+  desc:
+  img:
+  tag: want
+
+- name: Lenovo Thinkpad T420s
+  desc:
+  img:
+  tag: want
+
+- name: Apple Power Mac 5,1 (G4 Cube)
+  desc:
+  img:
+  tag: want
+
+- name: Apple Mac Pro 6,1 (Late 2013)
+  desc:
+  img:
+  tag: want
+

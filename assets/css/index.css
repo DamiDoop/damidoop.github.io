@@ -8,6 +8,10 @@ a.outofwindow {
     width: 62.5%;
     margin: 0 auto;
 }
+#main-left {
+    width: 62.5%;
+    margin: 0 auto;
+}
 .title {
     font-weight: 650;
     font-size: 72px;
@@ -26,6 +30,10 @@ a.outofwindow {
         float: left;
         width: 25%;
     }
+    nav-right {
+        float: right;
+        width: 25%;
+    }
     section {
         margin-left: 25%;
     }
@@ -37,6 +45,10 @@ a.outofwindow {
     }
     nav {
         display: block;
+    }
+    nav-right {
+        float: right;
+        width: 25%;
     }
     section {
         margin-left: 0%;
