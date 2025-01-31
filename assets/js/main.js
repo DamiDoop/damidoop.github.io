@@ -1,8 +1,8 @@
-window.addEventListener('load', initialize, false);
-window.addEventListener('load', loadTheme, false);
+window.addEventListener('DOMContentLoaded', initialize, false);
+window.addEventListener('DOMContentLoaded', loadTheme, false);
 
 function swapStyleSheet(sheet) {
-    document.getElementById("pagestyle").setAttribute("href", sheet);
+    document.getElementById("site-theme").setAttribute("href", sheet);
 }
 
 function initialize() {
@@ -11,15 +11,15 @@ function initialize() {
     let sevenStyle = document.getElementById("7-style");
 
     XPStyle.onclick = function () {
-        swapStyleSheet("https://unpkg.com/xp.css");
+        swapStyleSheet("/assets/css/theme/XP.css");
         localStorage.setItem("theme", "XP");
     }
     ninetyEightStyle.onclick = function () {
-        swapStyleSheet("https://unpkg.com/xp.css@0.2.3/dist/98.css");
+        swapStyleSheet("/assets/css/theme/98.css");
         localStorage.setItem("theme", "98");
     }
     sevenStyle.onclick = function () {
-        swapStyleSheet("https://unpkg.com/7.css")
+        swapStyleSheet("/assets/css/theme/7.css")
         localStorage.setItem("theme", "7");
     }
 }
@@ -30,15 +30,15 @@ function loadTheme() {
 
     switch (currentTheme) {
         case "XP":
-            swapStyleSheet("https://unpkg.com/xp.css");
+            swapStyleSheet("/assets/css/theme/XP.css");
             themeSelect.value = "0";
             break
         case "98":
-            swapStyleSheet("https://unpkg.com/98.css");
+            swapStyleSheet("/assets/css/theme/98.css");
             themeSelect.value = "1";
             break
         case "7":
-            swapStyleSheet("https://unpkg.com/7.css");
+            swapStyleSheet("/assets/css/theme/7.css");
             themeSelect.value = "2";
             break
     }
