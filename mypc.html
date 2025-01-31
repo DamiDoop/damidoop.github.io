@@ -9,8 +9,7 @@ layout: main-pc
         flex-wrap: wrap;
         width: 100%;
     }
-    .flex-container > div {
-        border: 1px solid rgba(0, 0, 0, 0.1);
+    .flex-container > fieldset {
         margin: 5px;
         padding: 5px;
         min-width: 22%;
@@ -36,22 +35,24 @@ layout: main-pc
                     <div class="flex-container">
                         {% for computer in site.data.computers %}
                         {% if computer.tag == "alive" %}
-                        <div>
+                        <fieldset>
+                            <legend>{{ computer.name }}</legend>
                             {% if computer.image %}
                             <img src="{{ computer.image }}" alt="{{ computer.name }}" style="width:100%">
                             {% endif %}
-                            <p><strong>{{ computer.name }}</strong></p>
                             <p>CPU: {{ computer.cpu }}</p>
                             <p>GPU: {{ computer.gpu }}</p>
                             <p>RAM: {{ computer.ram }}</p>
                             <p>Resolution: {{ computer.res }}</p>
                             <p><strong>Description:</strong><br>{{ computer.desc }}</p>
+                            <section class="field-row" style="justify-content: flex-end;">
                             {% if computer.doc %}
                             <button onclick="window.location = '{{ computer.doc }}'">User Manual</button>
                             {% else %}
                             <button disabled>User Manual</button>
                             {% endif %}
-                        </div>
+                            </section>
+                        </fieldset>
                         {% endif %}
                         {% endfor %}
                     </div>
@@ -76,22 +77,24 @@ layout: main-pc
                     <div class="flex-container">
                         {% for computer in site.data.computers %}
                         {% if computer.tag == "dead" %}
-                        <div>
+                        <fieldset>
+                            <legend>{{ computer.name }}</legend>
                             {% if computer.image %}
                             <img src="{{ computer.image }}" alt="{{ computer.name }}" style="width:100%;">
                             {% endif %}
-                            <p><strong>{{ computer.name }}</strong></p>
                             <p>CPU: {{ computer.cpu }}</p>
                             <p>GPU: {{ computer.gpu }}</p>
                             <p>RAM: {{ computer.ram }}</p>
                             <p>Resolution: {{ computer.res }}</p>
                             <p><strong>Description:</strong><br>{{ computer.desc }}</p>
+                            <section class="field-row" style="justify-content: flex-end;">
                             {% if computer.doc %}
                             <button onclick="window.location = '{{ computer.doc }}'">User Manual</button>
                             {% else %}
                             <button disabled>User Manual</button>
                             {% endif %}
-                        </div>
+                            </section>
+                        </fieldset>
                         {% endif %}
                         {% endfor %}
                     </div>

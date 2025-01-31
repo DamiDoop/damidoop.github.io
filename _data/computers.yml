@@ -21,7 +21,7 @@
   tag: alive
   doc: /assets/documents/probook_650_g2.pdf
 
-- name: Lenovo Thinkpad T480
+- name: Lenovo ThinkPad T480
   desc: My T480. I got it for school after my Surface Laptop Go failed on me, and it has been rock solid since. I know
     that it is an aging laptop, but it still runs absolutely flawlessly on linux. I was previously running Fedora 41 on
     it, though I switched to Universal Blue's Aurora 41 because I wanted to try out an immutable distribution. Despite
@@ -33,7 +33,7 @@
   res: 1920x1080
   tag: alive
   image: /assets/img/pictures/Computers/t480.jpg
-  doc: /assets/documents/thinkpad_t480.pdf
+  doc: /assets/documents/ThinkPad_t480.pdf
 
 - name: HP ProBook 6570b
   desc: I got this laptop back in 2018 from that aforementioned family member, and it served me well through school,
@@ -52,7 +52,7 @@
 - name: Apple Mac Mini 2,1 (Mid-2007)
   desc: I just got this computer (as of writing this) for $20 on FB Marketplace, and it's my first ever Mac. It is running
     Mac OS X 10.6.8 Snow Leopard and has been pretty fun to mess with. It doesn't run OSX slowly, but it certainly runs
-    Debian 12 rather slowly. I also gotta say, I do like how the Mac Minis look.
+    modern Linux rather slowly (At least with XFCE). I also gotta say, I do like how the Mac Minis look.
   cpu: Intel Core 2 Duo (T5600)
   gpu: GMA 950 Chipset
   ram: 2x512mb DDR2
@@ -86,7 +86,7 @@
 - name: XP/7 Machine
   desc: This was my old server, which at the time lacked a GPU. Currently, I use it for Windows XP and Windows 7 as the
     early 2010s hardware has good driver support for both. It's come in handy for CD ripping and burning.
-  cpu: AMD A10 APU
+  cpu: AMD A8 APU
   gpu: Nvidia GTX 660
   ram: 2x4gb DDR4
   res: 1920x1080
@@ -154,28 +154,28 @@
   image: /assets/img/pictures/Computers/surface.jpg
 
 # Want
-- name: Lenovo Thinkpad X220
-  desc:
-  img:
+- name: Lenovo ThinkPad X220
   tag: want
+  doc: /assets/documents/thinkpad_x220.pdf
 
-- name: IBM Thinkpad X60
-  desc:
-  img:
+- name: IBM ThinkPad X60
   tag: want
+  doc: /assets/documents/thinkpad_x60.pdf
 
-- name: Lenovo Thinkpad T420s
-  desc:
-  img:
+- name: Lenovo ThinkPad T420s
   tag: want
+  doc: /assets/documents/thinkpad_t420s.pdf
 
 - name: Apple Power Mac 5,1 (G4 Cube)
-  desc:
-  img:
   tag: want
+  doc: /assets/documents/power_mac_5,1.pdf
+#  img: /assets/img/pictures/Computers/g4cube.jpg
+#  desc: The quick brown fox jumps over the lazy dog.
 
 - name: Apple Mac Pro 6,1 (Late 2013)
-  desc:
-  img:
   tag: want
+  doc: /assets/documents/mac_pro_6,1.pdf
 
+- name: Sony VAIO PCG-505E
+  tag: want
+  doc: /assets/documents/pcg-505E.pdf

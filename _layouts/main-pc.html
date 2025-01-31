@@ -92,8 +92,15 @@
                             {% endif %}
                             <p><strong>{{ computer.name }}</strong></p>
                             {% if computer.desc %}
-                            <p><strong>Description:</strong><br>{{ computer.desc }}</p>
+                            <p>{{ computer.desc }}</p>
                             {% endif %}
+                            <section class="field-row" style="justify-content: flex-end;">
+                                {% if computer.doc %}
+                                <button onclick="window.location = '{{ computer.doc }}'">User Manual</button>
+                                {% else %}
+                                <button disabled>User Manual</button>
+                                {% endif %}
+                            </section>
                         </fieldset>
                         <br>
                         {% endif %}
