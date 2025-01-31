@@ -60,11 +60,11 @@
                     <marquee>
                         <div>
                             <img src='https://www.free-website-hit-counter.com/zc.php?d=9&id=4484&s=18' border='0'>
-                            <img src="/assets/img/pictures/buttons/any_browser.gif">
-                            <a href="https://bmh.neocities.org/"><img src="/assets/img/pictures/buttons/bestview.gif"></a>
-                            <img src="/assets/img/pictures/buttons/bmhonline_button.gif">
-                            <img src="/assets/img/pictures/buttons/can_iam.gif">
-                            <img src="/assets/img/pictures/buttons/linux_powered.gif">
+                            {% for button in site.data.buttons %}
+                            {% if button.tag == "fun" %}
+                            <img src="{{ button.img }}" alt="{{ button.name }}">
+                            {% endif %}
+                            {% endfor %}
                         </div>
                     </marquee>
                     <section class="field-row" style="justify-content: flex-end">
