@@ -49,7 +49,7 @@
   image: /assets/img/pictures/Computers/6570b-8.1.jpg
   doc: /assets/documents/probook_6475b.pdf
 
-- name: Apple Mac Mini 2,1 (Mid-2007)
+- name: Apple Mac Mini 2,1 (Mid 2007)
   desc: I just got this computer (as of writing this) for $20 on FB Marketplace, and it's my first ever Mac. It is running
     Mac OS X 10.6.8 Snow Leopard and has been pretty fun to mess with. It doesn't run OSX slowly, but it certainly runs
     modern Linux rather slowly (At least with XFCE). I also gotta say, I do like how the Mac Minis look.
@@ -114,6 +114,30 @@
   res: 1280x800
   image: /assets/img/pictures/Computers/dusty-ass-deck.jpg
   tag: alive
+
+- name: Apple Mac Mini 7,1 (Late 2014)
+  desc: I picked this one up for $100, and it has been super useful so far. It's nice to have a *real* Mac that can run
+    modern macOS (even if Sequoia needs OCLP, it runs fine) which can run modern software. A real nice change of pace from
+    my two older intel Macs and my Hackintosh.
+  cpu: Intel Core i5 4500U
+  gpu: Intel HD Graphics 5000
+  ram: 4gb (Soldered)
+  res: 1920x1080
+  image:
+  tag: alive
+
+- name: Nintendo Wii U Deluxe
+  desc: I got my Wii U for my birthday in 2014, and I have loved it ever since. It is hands down my favourite Nintendo
+    console, and with its age, it has gotten more and more useful as the homebrew scene has picked up pace. With Pretendo,
+    online functionality is available once again, and with projects like Linux on Wii U as well as Entii for Workcubes,
+    the Wii U is actually coming to be a decent PPC workstation, too. (Which is why I feel it can be considered a computer)
+  cpu: IBM Espresso
+  gpu: AMD Radeon Latte
+  ram: 2gb (Soldered)
+  res: 1920x1080
+  image: /assets/img/pictures/Computers/WiiU.jpg
+  tag: alive
+
 
 # Dead
 - name: HP ProBook 450 G3

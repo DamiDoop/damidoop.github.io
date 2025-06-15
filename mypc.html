@@ -46,11 +46,11 @@ layout: main-pc
                             <p><strong>Resolution:</strong> {{ computer.res }}</p>
                             <p><strong>Description:</strong><br>{{ computer.desc }}</p>
                             <section class="field-row" style="justify-content: flex-end;">
-                            {% if computer.doc %}
-                            <button onclick="window.location = '{{ computer.doc }}'">User Manual</button>
-                            {% else %}
-                            <button disabled>User Manual</button>
-                            {% endif %}
+                                {% if computer.doc %}
+                                <button onclick="window.location = '{{ computer.doc }}'">User Manual</button>
+                                {% else %}
+                                <button disabled>User Manual</button>
+                                {% endif %}
                             </section>
                         </fieldset>
                         {% endif %}
@@ -88,11 +88,11 @@ layout: main-pc
                             <p><strong>Resolution:</strong> {{ computer.res }}</p>
                             <p><strong>Description:</strong><br>{{ computer.desc }}</p>
                             <section class="field-row" style="justify-content: flex-end;">
-                            {% if computer.doc %}
-                            <button onclick="window.location = '{{ computer.doc }}'">User Manual</button>
-                            {% else %}
-                            <button disabled>User Manual</button>
-                            {% endif %}
+                                {% if computer.doc %}
+                                <button onclick="window.location = '{{ computer.doc }}'">User Manual</button>
+                                {% else %}
+                                <button disabled>User Manual</button>
+                                {% endif %}
                             </section>
                         </fieldset>
                         {% endif %}
