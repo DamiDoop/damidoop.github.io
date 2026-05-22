@@ -1,27 +1,31 @@
 ---
-title: Home
-layout: main
+title: damidoop.xyz
+desc: placeholder
+layout: default
 ---
 
+<div class="page-intro">
+<!--    <h1>ninjacheetah.dev</h1>-->
+<!--    <p>hey there, welcome to my blog! I write about all sorts of tech nonsense here, from fun experiments to updates on my projects :3</p>-->
+</div>
 
-<section>
-    <div class="window">
-        <div class="title-bar">
-            <div class="title-bar-text">Welcome!</div>
-            <div class="title-bar-controls">
-                <button aria-label="Minimize"></button>
-                <button aria-label="Close"></button>
-            </div>
-        </div>
-        <div class="window-body">
-            <fieldset>
-                <p>Welcome to my website, DamiDoop.XYZ! This website will be where I write blog posts about whatever it
-                may be that I want to get out of my head, I'll have pages for all the projects I'm working on, and really
-                just about anything else I want to put on this website.</p>
-                <p>Luckily for all, this website is fairly easy to navigate! Either to the left or just above, you'll
-                see the navigation window. You can click on most of the options, while some are just dropdowns. Keep in
-                mind that all the pages under "Archives" and "Services" will all open external sites in this tab.</p>
-            </fieldset>
-        </div>
+{% assign years = site.posts
+| group_by_exp: "post", "post.date | date: '%Y'"
+%}
+
+{% for year in years %}
+<!--    <h2>{{ year.name }}</h2>-->
+<div class="blog-list-year">
+    {% for post in year.items %}
+    <div>
+        <p>
+            {% if post.favorite == true %}
+            <span class="favorite-article">★</span>
+            {% endif %}
+            <span class="blog-list-date-span" style="margin-right: 1em; font-style: italic; font-family: Inter, sans-serif; font-weight: 300">{{ post.date | date: "%d %b %Y" }}</span>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+        </p>
     </div>
-</section>
+    {% endfor %}
+</div>
+{% endfor %}

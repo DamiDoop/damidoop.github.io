@@ -1,7 +1,7 @@
 ---
 title: My Collection of Physical Media
 author: Maple
-layout: blogpage
+layout: blogpost
 icon: /assets/img/blog/mmcndmgr.dll_14_30571-1.png
 desc: Since I said I might in my About Me, I figured I'd write a blog post about my collection of physical media. If
     anything, it is probably a good way to keep inventory of what I actually have.

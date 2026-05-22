@@ -1,7 +1,7 @@
 ---
 title: NCX Site Overhaul
 author: Maple
-layout: blogpage
+layout: blogpost
 icon: /assets/img/blog/blog-site-overhaul.png
 desc: Information about the NCX Site's facelift, includes some helpful info for making new blogs, such as how to set a description and a custom icon.
 ---

@@ -1,9 +1,9 @@
 ---
 title: Updates and my current projects
 author: Maple
-layout: blogpage
-icon:
+layout: blogpost
 desc:
+updated: 2026-05-21
 hidden: true
 ---
 
@@ -29,3 +29,6 @@ it I'll have more things to write for this blog (even if it ends up being writte
 I think that about wraps up what I'm doing for my current big project, so I'll see you next time! Bye!
 
 <sub>I might just write another article right now about the state of the website, but I just wanted to get *something* out.</sub>
+
+UPDATE: uh, yeah, so I haven't been doing a great job with that big project, so along with the next website redesign will try and get
+me to do very small-scale projects.

@@ -1,7 +1,7 @@
 ---
 title: Webfishing (I'm already addicted)
 author: Maple
-layout: blogpage
+layout: blogpost
 icon: /assets/img/blog/webfishing/webfishing-thumb.jpg
 desc: "So I just bought Webfishing last night, a purchase that I had been holding off because of
      <li> a. I didn't know if I was willing to spend those seven dollars and </li>

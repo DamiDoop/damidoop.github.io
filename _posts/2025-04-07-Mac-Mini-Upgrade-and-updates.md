@@ -1,7 +1,7 @@
 ---
 title: Mac Mini Upgrades (at long last) + Some Updates I suppose
 author: Maple
-layout: blogpage
+layout: blogpost
 icon: 
 desc: 
 ---

@@ -1,7 +1,7 @@
 ---
 title: I got a new Mac Mini, though it was a soul for a soul...
 author: Maple
-layout: blogpage
+layout: blogpost
 icon: /assets/img/blog/Disaster/mac-mini.jpg
 desc: I recently purchased a mid-2007 Mac Mini, and I payed the ultimate price. It was a 
     soul for a soul.

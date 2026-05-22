@@ -1,9 +1,9 @@
-name: DamiDoop XYZ
-title: DamiDoop XYZ
+name: damidoop.xyz
+title: damidoop.xyz
 url: https://damidoop.xyz
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
 feed:
-  posts_limit: 20
+  posts_limit: 30

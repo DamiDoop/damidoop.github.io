@@ -1,7 +1,7 @@
 ---
 title: A year of my Minecraft Server
 author: Maple
-layout: blogpage
+layout: blogpost
 icon: /assets/img/blog/minecraft/town-overview-oct-12-24.png
 desc: An almost retrospective blog post about my Minecraft server, detailing what I did and want to do in it.
     <br>also again I love having a blog where I can ramble as much as I want!!!
