@@ -3,7 +3,7 @@ title: Updates and my current projects
 author: Maple
 layout: blogpost
 desc:
-updated: 2026-05-21
+updated: 21 May 2026
 hidden: true
 ---
 

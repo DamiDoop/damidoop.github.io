@@ -5,11 +5,12 @@ layout: default
 <div>
     <h1>{{ page.title }}</h1>
     <p>
-        <strong>Published {{ page.date | date: "%Y-%m-%d" }}</strong>,
+        <i>{{ page.date | date: "%d %b %Y" }}</i>
         {% if page.updated == null %}
-        <i>Last Updated: Never</i>
+<!--        <i>Last Updated: Never</i>-->
         {% else %}
-        <i>Last Updated: {{ page.updated }}</i>
+        <span>-</span>
+        <i>Up. {{ page.updated }}</i>
         {% endif %}
     </p>
     {% if page.series_next %}
@@ -34,24 +35,23 @@ layout: default
             </p>
         {% endif %}
     {% endif %}
-    <br>
     <div class="blog-content">
         {{ content }}
     </div>
-    <script src="https://giscus.app/client.js"
-    data-repo="NinjaCheetah/ninjacheetah.github.io"
-    data-repo-id="MDEwOlJlcG9zaXRvcnkyNDUwMjQwNDA="
-    data-category="Article Comments"
-    data-category-id="DIC_kwDODprFKM4ConHT"
-    data-mapping="title"
-    data-strict="0"
-    data-reactions-enabled="1"
-    data-emit-metadata="0"
-    data-input-position="top"
-    data-theme="light"
-    data-lang="en"
-    data-loading="lazy"
-    crossorigin="anonymous"
-    async>
-    </script>
+<!--    <script src="https://giscus.app/client.js"-->
+<!--    data-repo="DamiDoop/damidoop.github.io"-->
+<!--    data-repo-id="MDEwOlJlcG9zaXRvcnkyNDUwMjQwNDA="-->
+<!--    data-category="Article Comments"-->
+<!--    data-category-id="DIC_kwDODprFKM4ConHT"-->
+<!--    data-mapping="title"-->
+<!--    data-strict="0"-->
+<!--    data-reactions-enabled="1"-->
+<!--    data-emit-metadata="0"-->
+<!--    data-input-position="top"-->
+<!--    data-theme="light"-->
+<!--    data-lang="en"-->
+<!--    data-loading="lazy"-->
+<!--    crossorigin="anonymous"-->
+<!--    async>-->
+<!--    </script>-->
 </div>
