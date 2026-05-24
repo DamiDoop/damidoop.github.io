@@ -1,3 +1,7 @@
+@import url('https://fonts.cdnfonts.com/css/highway-gothic');
+@import url('https://fonts.cdnfonts.com/css/clearviewhwy');
+
+
 :root {
   font-family: Inter, sans-serif;
   font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
@@ -20,9 +24,14 @@ svg {
   display: block;
 }
 
+.title {
+    font-family: 'Highway Gothic Wide', sans-serif;
+    font-weight: 400
+}
+
 .nav {
+    font-family: 'Highway Gothic Narrow', sans-serif;
     display: flex;
-    /*justify-content: center;*/
     padding: 0;
     margin: 0;
 }
@@ -47,8 +56,7 @@ svg {
     display: flex;
     justify-content: center;
     padding: 0;
-    margin: 0;
-    margin-top: 2rem;
+    margin: 2rem 0 0;
 }
 
 .page-intro {
@@ -56,7 +64,6 @@ svg {
 }
 
 .blog-list-year {
-    /*padding-bottom: 1rem;*/
     position: relative;
 }
 
@@ -108,41 +115,3 @@ img + em {
   font-size: 1.5em;
   font-weight: 500;
 }
-
-/* 
-This is commented out just to denote that I removed the dropdown and it is therefore
-unnecessary but if I actually delete it I'm suddenly going to need it again or
-something so it can just stay I guess.
-
-.dropdown {
-  position: relative;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  min-width: 160px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-  z-index: 1;
-  padding: 0;
-}
-
-.dropdown-content li {
-  list-style: none;
-}
-
-.dropdown-content a {
-  display: block;
-  padding: 10px 10px;
-  text-decoration: none;
-}
-
-/* @media (hover: hover) {
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-}
-
-.dropdown.open .dropdown-content {
-  display: block;
-} */

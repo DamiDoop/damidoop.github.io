@@ -7,21 +7,35 @@ desc: I recently purchased a mid-2007 Mac Mini, and I payed the ultimate price. 
     soul for a soul.
 ---
 
-<div class="window" style="float: right; max-width: 24%; margin: 1% 2% 1% 2%">
-    <div class="title-bar">
-        <div class="title-bar-text">Gore of my 450G2..</div>
-        <div class="title-bar-controls">
-            <button aria-label="Close"></button>
-        </div>
-    </div>
-    <div class="window-body">
-        <img src="/assets/img/blog/Disaster/laptop-display.jpg" style="max-width: 100%"/>
-    </div>
-      <div class="status-bar">
-        <p class="status-bar-field">Yep, a shelf fell on that.</p>
-        <p class="status-bar-field">Picture taken on February 21, 2025.</p>
-      </div>
-</div>
+[//]: # (<div class="window" style="float: right; max-width: 24%; margin: 1% 2% 1% 2%">)
+
+[//]: # (    <div class="title-bar">)
+
+[//]: # (        <div class="title-bar-text">Gore of my 450G2..</div>)
+
+[//]: # (        <div class="title-bar-controls">)
+
+[//]: # (            <button aria-label="Close"></button>)
+
+[//]: # (        </div>)
+
+[//]: # (    </div>)
+
+[//]: # (    <div class="window-body">)
+
+[//]: # (        <img src="/assets/img/blog/Disaster/laptop-display.jpg" style="max-width: 100%"/>)
+
+[//]: # (    </div>)
+
+[//]: # (      <div class="status-bar">)
+
+[//]: # (        <p class="status-bar-field">Yep, a shelf fell on that.</p>)
+
+[//]: # (        <p class="status-bar-field">Picture taken on February 21, 2025.</p>)
+
+[//]: # (      </div>)
+
+[//]: # (</div>)
 
 
 Just yesterday I purchased a mid-2007 Mac Mini on Facebook Marketplace for $20, which

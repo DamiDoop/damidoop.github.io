@@ -9,20 +9,33 @@ desc: "So I just bought Webfishing last night, a purchase that I had been holdin
 
 ---
 
-<div class="window" style="float: right; max-width: 24%; margin: 1% 2% 1% 2%">
-    <div class="title-bar">
-        <div class="title-bar-text">mfw I catch a fish</div>
-        <div class="title-bar-controls">
-            <button aria-label="Close"></button>
-        </div>
-    </div>
-    <div class="window-body">
-        <img id="webfish1" src="/assets/img/blog/webfishing/webfishing-thumb.jpg" style="max-width: 100%"/>
-    </div>
-      <div class="status-bar">
-        <p class="status-bar-field">"Huge Coelacanth (It's 331cm!)"</p>
-      </div>
-</div>
+[//]: # (<div class="window" style="float: right; max-width: 24%; margin: 1% 2% 1% 2%">)
+
+[//]: # (    <div class="title-bar">)
+
+[//]: # (        <div class="title-bar-text">mfw I catch a fish</div>)
+
+[//]: # (        <div class="title-bar-controls">)
+
+[//]: # (            <button aria-label="Close"></button>)
+
+[//]: # (        </div>)
+
+[//]: # (    </div>)
+
+[//]: # (    <div class="window-body">)
+
+[//]: # (        <img id="webfish1" src="/assets/img/blog/webfishing/webfishing-thumb.jpg" style="max-width: 100%"/>)
+
+[//]: # (    </div>)
+
+[//]: # (      <div class="status-bar">)
+
+[//]: # (        <p class="status-bar-field">"Huge Coelacanth &#40;It's 331cm!&#41;"</p>)
+
+[//]: # (      </div>)
+
+[//]: # (</div>)
 
 So I just bought Webfishing last night, a purchase that I had been holding off because of
 - a. I didn't know if I was willing to spend those seven dollars and

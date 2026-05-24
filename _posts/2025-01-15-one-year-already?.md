@@ -8,21 +8,35 @@ desc: An almost retrospective blog post about my Minecraft server, detailing wha
 hidden: 
 ---
 
-<div class="window" style="float: right; max-width: 24%; margin: 1% 2% 1% 2%">
-    <div class="title-bar">
-        <div class="title-bar-text">Castle completed!</div>
-        <div class="title-bar-controls">
-            <button aria-label="Close"></button>
-        </div>
-    </div>
-    <div class="window-body">
-        <img src="/assets/img/blog/minecraft/castle-exterior-feb-2-24.png" style="max-width: 100%"/>
-    </div>
-      <div class="status-bar">
-        <p class="status-bar-field">The castle I built in Beta 1.7.3</p>
-        <p class="status-bar-field">Screenshot was taken February 2nd, 2024.</p>   
-      </div>
-</div>
+[//]: # (<div class="window" style="float: right; max-width: 24%; margin: 1% 2% 1% 2%">)
+
+[//]: # (    <div class="title-bar">)
+
+[//]: # (        <div class="title-bar-text">Castle completed!</div>)
+
+[//]: # (        <div class="title-bar-controls">)
+
+[//]: # (            <button aria-label="Close"></button>)
+
+[//]: # (        </div>)
+
+[//]: # (    </div>)
+
+[//]: # (    <div class="window-body">)
+
+[//]: # (        <img src="/assets/img/blog/minecraft/castle-exterior-feb-2-24.png" style="max-width: 100%"/>)
+
+[//]: # (    </div>)
+
+[//]: # (      <div class="status-bar">)
+
+[//]: # (        <p class="status-bar-field">The castle I built in Beta 1.7.3</p>)
+
+[//]: # (        <p class="status-bar-field">Screenshot was taken February 2nd, 2024.</p>   )
+
+[//]: # (      </div>)
+
+[//]: # (</div>)
 
 It certainly hasn't felt like a year, and to some it may not look like a year's worth of progress, but oh man.
 

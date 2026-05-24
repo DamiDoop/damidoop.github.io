@@ -4,7 +4,7 @@ author: Maple
 layout: blogpost
 desc:
 updated: 21 May 2026
-hidden: true
+hidden:
 ---
 
 So, over the past few months I've was out of school and it really took a toll on me, and left me with no motivation to do anything

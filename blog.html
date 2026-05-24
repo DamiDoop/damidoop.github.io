@@ -1,0 +1,28 @@
+---
+title: Blog
+desc: placeholder
+layout: default
+permalink: /blog/
+---
+{% assign years = site.posts
+| group_by_exp: "post", "post.date | date: '%Y'"
+%}
+
+{% for year in years %}
+<!--    <h2>{{ year.name }}</h2>-->
+<div class="blog-list-year">
+    {% for post in year.items %}
+    {% if post.hidden == null %}
+    <div>
+        <p>
+            {% if post.favorite == true %}
+            <span class="favorite-article">★</span>
+            {% endif %}
+            <span class="blog-list-date-span" style="margin-right: 1em; font-style: italic; font-family: Inter, sans-serif; font-weight: 300">{{ post.date | date: "%d %b %Y" }}</span>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+        </p>
+    </div>
+    {% endif %}
+    {% endfor %}
+</div>
+{% endfor %}
