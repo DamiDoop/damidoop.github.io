@@ -3,7 +3,7 @@ title: New Site+!
 author: Maple
 layout: blogpost
 desc:
-updated: 21 May 2026
+updated:
 hidden:
 ---
 It's been a while, but I've redone the website again.
