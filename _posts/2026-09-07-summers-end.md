@@ -3,6 +3,7 @@ title: Summer's over (Lots of photos!)
 author: Maple
 layout: blogpost
 hidden:
+favourite: true
 ---
 
 Now that summer is coming to a close, and it's been a while since I've written something, I figured I'd write about what

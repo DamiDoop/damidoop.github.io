@@ -38,10 +38,10 @@ layout: default
     {% if post.hidden == null %}
     <div>
         <p>
-            {% if post.favorite == true %}
-            <span class="favorite-article">★</span>
+            {% if post.favourite == true %}
+            <span class="favourite-article">★</span>
             {% endif %}
-            <span class="blog-list-date-span" style="margin-right: 1em; font-style: italic; font-family: Inter, sans-serif; font-weight: 300">{{ post.date | date: "%d %b %Y" }}</span>
+            <span class="blog-list-date-span" style="margin-right: 0.5em; font-style: italic; font-family: Inconsolata, Inter, sans-serif; font-weight: 400;">{{ post.date | date: "%d %b %Y" }}</span>
             <a href="{{ post.url }}">{{ post.title }}</a>
         </p>
     </div>
