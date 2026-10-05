@@ -30,9 +30,12 @@ layout: default
 {% assign years = site.posts
 | group_by_exp: "post", "post.date | date: '%Y'"
 %}
+{% assign currentYear = site.time | date: '%Y' %}
 
 {% for year in years %}
-<!--    <h2>{{ year.name }}</h2>-->
+{% if year.name != currentYear %}
+<p style="margin-right: 0.5em;; font-family: Inconsolata, Inter, sans-serif; font-weight: 600; text-align: left;">{{ year.name }}</p>
+{% endif %}
 <div class="blog-list-year">
     {% for post in year.items %}
     {% if post.hidden == null %}

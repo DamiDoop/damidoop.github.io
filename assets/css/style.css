@@ -98,6 +98,12 @@ svg {
   font-weight: 300;
 }
 
+.blog-title {
+  font-family: 'Hubot Sans', sans-serif;
+  font-weight: 550;
+  font-size: 1.7em;
+}
+
 .blog-content {
   margin-bottom: 2rem;
 }
