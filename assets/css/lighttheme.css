@@ -3,13 +3,32 @@ body {
     background-color: #d7ffdc;
 }
 
+code {
+    color: white;
+    background-color: rgba(30, 30, 30, 10);
+    padding: 2px 5px 2px 5px;
+    border-radius: 5px;
+}
+
 a {
     color: #000000;
 }
 
-a:hover {
-    color: #50506c
+.blog-content a {
+    background-color: rgba(209, 229, 252, 80);
+    padding: 1px 3px 1px 3px;
+    border-radius: 2px;
 }
+
+.blog-content a:hover {
+    background-color: rgba(227, 238, 255, 80);
+    padding: 1px 3px 1px 3px;
+    border-radius: 2px;
+}
+
+/* a:hover {
+    color: #50506c
+} */
 
 .blog-list-date-span {
     color: #333333;
